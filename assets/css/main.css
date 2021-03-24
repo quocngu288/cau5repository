@@ -5306,7 +5306,7 @@ readers do not read off random characters that represent icons */
 
 html, body {
   font-size: 16px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased; }
   @media only screen and (max-width: 1160px) {
     html, body {
@@ -5334,7 +5334,205 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%; }
 
-.parent {
-  color: red; }
+header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  max-width: 1600px;
+  background-image: url("../img/headerimg.png"); }
+  header .navbar {
+    padding: 0 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+    background-image: url("../img/nav.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    top: 0; }
+    header .navbar .navbar-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header .navbar .navbar-left .navbar-left_hamburgur {
+        visibility: hidden;
+        cursor: pointer;
+        margin: 0 10px 0 0; }
+        header .navbar .navbar-left .navbar-left_hamburgur .fas {
+          color: #FFFFFF;
+          font-size: 25px; }
+      header .navbar .navbar-left .navbar-left_brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 1.5rem;
+        color: #fff; }
+    header .navbar .nav-menu {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 10px;
+      list-style: none;
+      text-align: center;
+      width: 100vw;
+      justify-content: end;
+      margin-right: 2rem;
+      visibility: visible; }
+      header .navbar .nav-menu .nav-item {
+        cursor: pointer; }
+        header .navbar .nav-menu .nav-item .nav-links--line {
+          width: 0%;
+          height: 4px;
+          background-color: #32b0ee;
+          transition: all 0.5s; }
+        header .navbar .nav-menu .nav-item .nav-links {
+          color: #fff;
+          font-size: 0.8rem;
+          line-height: 70px;
+          text-decoration: none;
+          padding: 0.5rem 1rem; }
+        header .navbar .nav-menu .nav-item:hover > .nav-links--line {
+          width: 100%; }
+  header .carousel {
+    height: 700px;
+    display: flex;
+    top: 50%;
+    justify-content: center; }
+    header .carousel .carousel__content {
+      text-align: center;
+      color: #FFFFFF; }
+      header .carousel .carousel__content .carousel__content--head {
+        font-size: 3rem;
+        font-weight: 100; }
+        header .carousel .carousel__content .carousel__content--head span {
+          font-weight: bold; }
+      header .carousel .carousel__content .carousel__content--note {
+        color: #0eb493;
+        font-size: 2.3rem;
+        font-weight: 100; }
+        header .carousel .carousel__content .carousel__content--note span {
+          color: #FFFFFF; }
+      header .carousel .carousel__content .carousel__content--foot {
+        font-size: 1.5rem;
+        font-weight: 100;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 15px; }
+        header .carousel .carousel__content .carousel__content--foot .carousel__content--line {
+          height: 2px;
+          width: 30px;
+          background-color: #0eb493; }
+      header .carousel .carousel__content .carousel__icon {
+        margin-top: 110px;
+        grid-gap: 15px; }
+        header .carousel .carousel__content .carousel__icon i {
+          margin: 0 5px;
+          color: rgba(255, 255, 255, 0.5);
+          cursor: pointer; }
+          header .carousel .carousel__content .carousel__icon i:hover {
+            color: white; }
+  @media screen and (max-width: 768px) {
+    header .navbar .navbar-left .navbar-left_hamburgur {
+      visibility: visible; }
+    header .navbar .nav-menu {
+      visibility: hidden; } }
+
+.line-title {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
+  margin: 25px 0; }
+  .line-title .line-title--line {
+    height: 2px;
+    width: 90px;
+    background-color: #0eb493; }
+
+.features {
+  background-color: #f4f7f9;
+  height: 460px; }
+  .features .features__title {
+    padding: 75px 0; }
+    .features .features__title h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: #0eb493; }
+  .features .features__wrap {
+    padding: 0 10%; }
+    .features .features__wrap .features__wrap--item {
+      display: flex; }
+      .features .features__wrap .features__wrap--item .item--list {
+        margin: 0 15px; }
+        .features .features__wrap .features__wrap--item .item--list i {
+          text-align: center;
+          border: 2px solid #0eb493;
+          line-height: 40px;
+          width: 40px;
+          border-radius: 50%; }
+      .features .features__wrap .features__wrap--item .item--header h2 {
+        font-size: 1.2rem;
+        font-weight: bold; }
+      .features .features__wrap .features__wrap--item .item--header p {
+        margin: 25px 0;
+        font-size: 0.8rem; }
+
+.works .works__title {
+  padding: 75px 0; }
+  .works .works__title h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #0eb493; }
+  .works .works__title p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center; }
+
+.sidebar {
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 30rem;
+  background: #242222;
+  padding: 10px;
+  height: 100%;
+  transform: translateX(-30rem);
+  transition: 0.5s all; }
+  .sidebar .navbar-left_brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #0eb493;
+    text-align: center;
+    margin: 20px 0; }
+  .sidebar .fa-times {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    cursor: pointer; }
+  .sidebar .nav-menu .nav-item {
+    height: 80px;
+    cursor: pointer; }
+    .sidebar .nav-menu .nav-item .nav-links--line {
+      width: 0%;
+      height: 4px;
+      background-color: #32b0ee;
+      transition: all 0.5s; }
+    .sidebar .nav-menu .nav-item .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+      color: #FFFFFF; }
+    .sidebar .nav-menu .nav-item:hover > .nav-links--line {
+      width: 100%; }
+
+.opensidebar {
+  transform: translateX(0rem); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+.line-title{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
+  margin: 25px 0;
+  .line-title--line{
+    height: 2px;
+    width:90px;
+    background-color: #0eb493;
+  }
+}
+

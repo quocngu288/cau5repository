@@ -1,0 +1,39 @@
+.features {
+  background-color: #f4f7f9;
+  height: 460px;
+  .features__title {
+    padding: 75px 0;
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: #0eb493;
+    }
+  }
+  .features__wrap {
+    padding: 0 10%;
+    .features__wrap--item {
+      display: flex;
+      .item--list {
+        margin: 0 15px;
+        i {
+          text-align: center;
+          border: 2px solid #0eb493;
+          line-height: 40px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+      .item--header {
+        h2{
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+p{
+  margin: 25px 0;
+  font-size: 0.8rem;
+}
+      }
+    }
+  }
+}

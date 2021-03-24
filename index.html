@@ -14,15 +14,144 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
 
 </head>
 <body>
-    <h1 class="parent"> 123</h1>
 
+<header>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-left_hamburgur" onclick="handleClickOpenSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="navbar-left_brand">Brandi</div>
+            <div class="navbar-left_input"></div>
+        </div>
+        <ul class="nav-right nav-menu">
+            <li class="nav-item">
+                <div class="nav-links--line"></div>
+                <a class="nav-links"> Home</a>
+            </li>
+            <li class="nav-item">
+                <div class="nav-links--line"></div>
+                <a class="nav-links"> Features</a>
+            </li>
+            <li class="nav-item">
+                <div class="nav-links--line"></div>
+                <a class="nav-links"> Works</a>
+            </li>
+            <li class="nav-item">
+                <div class="nav-links--line"></div>
+                <a class="nav-links">Team</a>
+            </li>
+            <li class="nav-item">
+                <div class="nav-links--line"></div>
+                <a class="nav-links">Contact</a>
+            </li>
+        </ul>
 
+    </div>
+
+    <div class="carousel">
+        <div class="carousel__content">
+            <p class="carousel__content--head">Meet <span>Brandi</span>!</p>
+            <p class="carousel__content--note">/created <span>one page template</span></p>
+            <div class="carousel__content--foot">
+                <span class="carousel__content--line"></span>
+                <p>We are team of professionals</p>
+                <span class="carousel__content--line"></span>
+            </div>
+            <div class="carousel__icon">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-dribbble"></i>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+<aside class="sidebar">
+    <div class="navbar-left_brand">Brandi
+        <i class="fas fa-times" onclick="handleClickCloseSidebar()"></i>
+    </div>
+
+    <ul class="nav-right nav-menu active">
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links"> Home</a>
+        </li>
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links"> Features</a>
+        </li>
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links"> Works</a>
+        </li>
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links">Team</a>
+        </li>
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links">Contact</a>
+        </li>
+    </ul>
+</aside>
+<div class="features">
+    <div class="features__title">
+        <h2>FEATURES</h2>
+        <div class="line-title">
+            <span class="line-title--line"></span>
+            <i class="fal fa-heart"></i>
+            <span class="line-title--line"></span>
+        </div>
+    </div>
+    <div class="features__wrap owl-carousel">
+        <div class="features__wrap--item item">
+            <div class="item--list">
+                <i class="fas fa-feather"></i>
+            </div>
+            <div class="item--header">
+                <h2>Branding</h2>
+                <p class="item--content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="works">
+    <div class="works__title">
+        <h2>WORKS</h2>
+        <div class="line-title">
+            <span class="line-title--line"></span>
+            <i class="fal fa-heart"></i>
+            <span class="line-title--line"></span>
+        </div>
+        <p>
+            Owl Carousel 2.x.x is not compatibile with previous version 1.x.x. The idea stays the same and it has a lot
+             and it has a lot
+
+        </p>
+    </div>
+    <div class="works__tab">
+
+    </div>
+</div>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -30,8 +159,26 @@
 
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
-
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>
 </body>
 </html>
 

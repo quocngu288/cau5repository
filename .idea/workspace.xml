@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705108df-46ae-46a6-8e75-5f1563e197a7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_testt.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/headerlayer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_features.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_works.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_testt.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -56,7 +64,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -64,6 +72,11 @@
       <recent name="$PROJECT_DIR$/assets/fonts" />
       <recent name="$PROJECT_DIR$/assets/scss/base/font-awesome" />
       <recent name="$PROJECT_DIR$/assets/js/vendor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NGUYỄN CHU QUỐC NGỮ-FE TEST\Cau5\assets\js" />
+      <recent name="D:\NGUYỄN CHU QUỐC NGỮ-FE TEST\Cau5\assets\css" />
+      <recent name="D:\NGUYỄN CHU QUỐC NGỮ-FE TEST\Cau5\assets\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -141,7 +154,10 @@
       <workItem from="1581559220065" duration="41000" />
       <workItem from="1589768669018" duration="101000" />
       <workItem from="1592912580067" duration="100000" />
-      <workItem from="1616059329567" duration="1150000" />
+      <workItem from="1616059329567" duration="1767000" />
+      <workItem from="1616124780977" duration="7707000" />
+      <workItem from="1616359180286" duration="19780000" />
+      <workItem from="1616558365361" duration="9245000" />
     </task>
     <servers />
   </component>
@@ -158,5 +174,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
