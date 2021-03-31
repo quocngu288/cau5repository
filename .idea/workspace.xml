@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705108df-46ae-46a6-8e75-5f1563e197a7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/headerlayer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_features.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_works.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_letdiscuss.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_map.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_somefun.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_teams.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_features.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/layout/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_testt.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_works.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_works.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -157,7 +158,12 @@
       <workItem from="1616059329567" duration="1767000" />
       <workItem from="1616124780977" duration="7707000" />
       <workItem from="1616359180286" duration="19780000" />
-      <workItem from="1616558365361" duration="9245000" />
+      <workItem from="1616558365361" duration="11150000" />
+      <workItem from="1616638518150" duration="20268000" />
+      <workItem from="1616729191554" duration="19026000" />
+      <workItem from="1616988869804" duration="19325000" />
+      <workItem from="1617070506010" duration="17956000" />
+      <workItem from="1617217300481" duration="6426000" />
     </task>
     <servers />
   </component>

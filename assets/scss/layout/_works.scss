@@ -1,16 +1,207 @@
-.works{
+.works {
+
   .works__title {
-    padding: 75px 0;
+    padding: 75px 0 60px 0;
+
     h2 {
       text-align: center;
-      font-size: 1.5rem;
-      font-weight: bolder;
+      font-size: 1.6rem;
+      font-weight: 800;
       color: #0eb493;
     }
-    p{
+
+    p {
       font-size: 0.8rem;
-      font-weight: bold;
+      font-weight: 600;
       text-align: center;
+      padding: 0 10%;
+    }
+  }
+
+  .works__tab {
+
+    .navtab {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 5px;
+      list-style: none;
+
+      margin: 0 auto 30px auto;
+      width: 40%;
+
+      .navtab-item {
+        padding: 5px 20px;
+        border: inherit;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+
+        .navtab--links {
+          color: #0b0b0b;
+          font-weight: 700;
+          font-size: 0.8rem;
+        }
+      }
+
+      .navtab-item.active {
+        background: #0eb493;
+
+        .navtab--links {
+          color: #fff;
+          font-weight: 700;
+
+        }
+      }
+    }
+
+    .works__tab--content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .content__item {
+        display: flex;
+        position: relative;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+
+        .content--detail {
+          position: absolute;
+          cursor: pointer;
+          background: rgba(29, 177, 147, 0.9);
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          padding: 50px 20px 0 20px;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          transition: all 0.5s;
+
+          .fas {
+            padding: 5px 7px;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+          }
+
+          h2 {
+            font-size: 1rem;
+            color: #FFFFFF;
+            font-weight: bolder;
+          }
+
+          p {
+            color: #FFFFFF;
+            font-size: 0.8rem;
+            padding: 5px;
+          }
+        }
+
+        &:hover .content--detail {
+          opacity: 1;
+        }
+      }
+    }
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 11; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      .close{
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+    }
+
+  }
+
+  @media #{$info-phone} {
+
+  }
+  @media screen and (max-width: 1220px) {
+    .works__tab {
+      .navtab {
+        width: 45%;
+        .navtab-item {
+          padding: 5px;
+        }
+      }
+    }
+
+  }
+  @media screen and (max-width: 992px) {
+    .works__tab {
+      .navtab {
+        width: 70%;
+      }
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    .works__tab {
+      .navtab {
+        grid-gap: 8px;
+        width: 70%;
+
+        .navtab-item {
+          padding: 10px 15px;
+
+
+        }
+      }
+
+      .works__tab--content {
+        grid-template-columns: repeat(2, 1fr);
+
+        .content__item {
+          .content--detail {
+            padding: 50px 20px 0 20px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .works__tab {
+      .navtab {
+        grid-gap: 5px;
+        width: 90%;
+        .navtab-item {
+          padding: 5px ;
+
+        }
+      }
+      .works__tab--content{
+        .content__item{
+          .content--detail {
+            padding: 30px 20px 0 20px;
+          }
+        }
+
+      }
     }
   }
 }

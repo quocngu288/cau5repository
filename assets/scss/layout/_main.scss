@@ -5,10 +5,14 @@
   align-items: center;
   grid-gap: 15px;
   margin: 25px 0;
+  .fas{
+    color: #c3c6c7;
+  }
   .line-title--line{
-    height: 2px;
+    height: 1px;
     width:90px;
-    background-color: #0eb493;
+    background-color: #c3c6c7;
+
   }
 }
 
