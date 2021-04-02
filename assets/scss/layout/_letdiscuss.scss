@@ -62,7 +62,7 @@
           border-top: none;
           border-left: none;
           border-right: none;
-          padding: 40px 0;
+          padding: 20px 0;
           width: 300px;
           font-size: 0.8rem;
           color: #c3c6c7;
@@ -77,6 +77,7 @@
       .content--form__send {
         text-align: right;
         margin-top: 40px;
+        cursor: pointer;
 
         h2 {
           font-size: 1rem;
@@ -217,7 +218,8 @@
           }
         }
       }
-      .content--icon{
+
+      .content--icon {
 
       }
     }

@@ -1,9 +1,8 @@
 .features {
   background-color: #f4f7f9;
-  height: 460px;
-
+  height: 430px;
+  padding: 70px 0 0 0;
   .features__title {
-    padding: 50px 0;
 
     h2 {
       text-align: center;
@@ -24,7 +23,7 @@
         i {
           display: inline-block;
           text-align: center;
-          border: 2px solid #0eb493;
+          border: 1px solid #0eb493;
         height: 40px;
           width: 40px;
           border-radius: 50%;
@@ -59,7 +58,7 @@
         //background: #c3c6c7;
         border-radius: 50%;
         border: 1px solid #c3c6c7;
-        margin-right: 4px;
+        margin-right: 10px;
         &:focus {
           outline: none;
         }

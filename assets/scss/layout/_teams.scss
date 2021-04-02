@@ -19,10 +19,7 @@
   }
 
   .teams__content {
-    //display: grid;
-    //grid-template-columns: repeat(4, 1fr);
-    //grid-gap: 30px;
-    //margin-right: 30px;
+
     padding: 0 10%;
     text-align: center;
 
@@ -113,7 +110,40 @@
   @media #{$info-phone} {
 
   }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1200px) {
+    .teams__content {
+      .teams__content--item {
+        .item--wrap {
+          .item__detail {
+            p{
+              padding: 10px 0 0px 0;
+              margin: 10px 0 20px 0;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1125px) {
+    .teams__content {
+      .teams__content--item {
+        .item--wrap {
+          .item__detail {
+            padding: 10px 20px;
+            p{
+              padding: 10px 0 0px 0;
+              margin: 10px 0 15px 0;
+            }
+          }
+
+
+        }
+        }
+      }
+  }
+  @media screen and (max-width: 1000px) {
     .teams__content {
       .teams__content--item {
         .item--wrap {
@@ -123,20 +153,20 @@
           }
 
           .item__detail {
-            padding:  10px;
+            padding:  40px 20px 30px 20px ;
 
             h2 {
               color: #FFFFFF;
             }
 
             p {
-              margin: 10px 0 10px 0;
+              margin: 20px 0 30px 0;
             }
 
             .detail-social {
               .fab {
-                line-height: 25px;
-                width: 25px;
+                line-height: 30px;
+                width: 30px;
               }
             }
           }
@@ -147,28 +177,27 @@
         }
       }
     }
-
   }
-  @media screen and (max-width: 790px) {
+  @media screen and (max-width: 850px) {
     .teams__content {
       .teams__content--item{
         .item--wrap {
           .item__detail {
-            padding: 70px 20px;
+            padding: 10px 20px;
 
             h2 {
               font-size: 1rem;
             }
 
             p {
-              margin: 20px 0 30px 0;
+              margin: 10px 0 10px 0;
               font-size: 0.8rem;
             }
 
             .detail-social {
               .fab {
-                line-height: 40px;
-                width: 40px;
+                line-height: 30px;
+                width: 30px;
               }
             }
           }
@@ -176,14 +205,12 @@
       }
     }
   }
-  @media screen and (max-width: 576px){
+  @media screen and (max-width: 790px) {
     .teams__content {
-
-
-      .teams__content--item {
+      .teams__content--item{
         .item--wrap {
           .item__detail {
-            padding: 15px 10px;
+            padding: 10px 20px;
 
             h2 {
               font-size: 1rem;
@@ -196,6 +223,33 @@
 
             .detail-social {
               .fab {
+                line-height: 30px;
+                width: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 670px) {
+    .teams__content {
+      .teams__content--item{
+        .item--wrap {
+          .item__detail {
+            padding: 10px 10px;
+
+            h2 {
+              font-size: 1rem;
+            }
+
+            p {
+              margin: 5px 0 10px 0;
+              font-size: 0.8rem;
+            }
+
+            .detail-social {
+              .fab {
                 line-height: 25px;
                 width: 25px;
               }
@@ -205,14 +259,42 @@
       }
     }
   }
-  @media screen and (max-width: 360px){
+  @media screen and (max-width: 590px){
     .teams__content {
 
 
       .teams__content--item {
         .item--wrap {
           .item__detail {
-            padding: 8px;
+            padding: 30px 20px;
+
+            h2 {
+              font-size: 1rem;
+            }
+
+            p {
+              margin: 20px 0 40px 0;
+              font-size: 0.8rem;
+            }
+            .detail-social {
+              .fab {
+                line-height: 30px;
+                width: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 490px){
+    .teams__content {
+
+
+      .teams__content--item {
+        .item--wrap {
+          .item__detail {
+            padding: 20px 8px 8px 8px;
             h2 {
               font-size: 0.8rem;
             }

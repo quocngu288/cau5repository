@@ -21,3 +21,18 @@ function closeModal(){
     // var span = document.getElementsByClassName("close")[0];
 modal.style.display="none"
 }
+
+btnTop=document.getElementById("btnTotop");
+window.onscroll=function (){scrollFunction()}
+function scrollFunction(){
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+        btnTop.style.display="block";
+    }else {
+        btnTop.style.display = "none";
+    }
+}
+function topFunc (){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
+}

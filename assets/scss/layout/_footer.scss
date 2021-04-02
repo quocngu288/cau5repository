@@ -7,6 +7,7 @@ footer {
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 30px;
   border-top: 5px solid #000;
+  position: relative;
 
   .footer__item1 {
     grid-column: 1/span 3;
@@ -93,12 +94,13 @@ footer {
 
   .footer__item4 {
     grid-column: 10/span 3;
-    //padding-bottom: 40px;
+
     .footer__item4-c1 {
       font-size: 0.8rem;
       color: #FFFFFF;
-      padding-top: 60px;
-
+      margin-top: 60px;
+      padding-left: 10px;
+      border-left: 1px solid #000;
       span:nth-child(1) {
         color: #0b0b0b;
         font-weight: 600;
@@ -121,6 +123,43 @@ footer {
     }
   }
 
+  #btnTotop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #32b0ee;
+    text-align: center;
+    cursor: pointer;
+    animation: play 2s ease infinite;
+    display: none;
+    z-index: 50;
+
+    .fas {
+      color: #FFF;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  @keyframes play {
+
+    0% {
+      transform: scale(1);
+    }
+    15% {
+      box-shadow: 0 0 0 5px rgba(50, 176, 238, 0.4);
+    }
+    25% {
+      box-shadow: 0 0 0 10px rgba(50, 176, 238, 0.4), 0 0 0 20px rgba(50, 176, 238, 0.2);
+    }
+    25% {
+      box-shadow: 0 0 0 15px rgba(50, 176, 238, 0.4), 0 0 0 30px rgba(50, 176, 238, 0.2);
+    }
+
+  }
   @media screen and (max-width: 1100px) {
     grid-gap: 20px;
   }
@@ -202,6 +241,7 @@ footer {
     .footer__item4 {
       .footer__item4-c1 {
         padding-top: 10px;
+
       }
 
       .footer__item4-c2 {
