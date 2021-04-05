@@ -85,6 +85,9 @@
           width: 100%;
         }
       }
+      @media screen and (max-width: 768px){
+        visibility: hidden;
+      }
     }
 
     .navbar-left_hamburgur {
@@ -95,7 +98,12 @@
         color: #FFFFFF;
         font-size: 25px;
       }
+      @media screen and (max-width: 768px){
+        visibility: visible;
+      }
     }
+    }
+
   }
 
   .carousel {
@@ -169,18 +177,18 @@
   @media #{$info-phone} {
 
   }
-  @media screen and (max-width: 768px) {
-
-    .navbar {
-      .navbar-left_hamburgur {
-        visibility: visible;
-      }
-      .nav-menu {
-        visibility: hidden;
-      }
-    }
-  }
-}
+//  @media screen and (max-width: 768px) {
+//
+//    .navbar {
+//      .navbar-left_hamburgur {
+//        visibility: visible;
+//      }
+//      .nav-menu {
+//        visibility: hidden;
+//      }
+//    }
+//  }
+//}
 
 .owl-caro1 {
   .owl-nav {
