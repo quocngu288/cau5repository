@@ -5383,9 +5383,10 @@ img {
       margin-right: 2rem;
       visibility: visible; }
       .header--wrap .navbar .nav-menu .nav-item {
-        cursor: pointer; }
+        cursor: pointer;
+        padding: 0 0.5rem; }
         .header--wrap .navbar .nav-menu .nav-item .nav-links--line {
-          width: 0%;
+          width: 0;
           height: 4px;
           background-color: #32b0ee;
           transition: all 0.5s; }
@@ -5393,8 +5394,7 @@ img {
           color: #fff;
           font-size: 0.8rem;
           line-height: 70px;
-          text-decoration: none;
-          padding: 0.5rem 1rem; }
+          text-decoration: none; }
         .header--wrap .navbar .nav-menu .nav-item:hover > .nav-links--line {
           width: 100%; }
       @media screen and (max-width: 768px) {

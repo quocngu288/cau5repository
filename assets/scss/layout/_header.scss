@@ -65,9 +65,9 @@
 
       .nav-item {
         cursor: pointer;
-
+        padding: 0 0.5rem;
         .nav-links--line {
-          width: 0%;
+          width: 0;
           height: 4px;
           background-color: #32b0ee;
           transition: all 0.5s;
@@ -78,7 +78,7 @@
           font-size: 0.8rem;
           line-height: 70px;
           text-decoration: none;
-          padding: 0.5rem 1rem;
+          //padding: 0.5rem 1rem;
         }
 
         &:hover > .nav-links--line {
