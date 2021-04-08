@@ -1,0 +1,227 @@
+.letdiscuss {
+  padding: 70px 0;
+
+  .letdiscuss__title {
+    padding: 0 0 60px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 800;
+      color: #0eb493;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      padding: 0 20%;
+    }
+  }
+
+  .letdiscuss__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 10%;
+
+    .letdiscuss__content--title {
+      grid-column: 1/span 3;
+
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      p {
+        grid-column: 1/span 2;
+        font-size: 13px;
+        width: 55%;
+        padding-top: 40px;
+        color: #c3c6c7;
+        font-weight: 600;
+      }
+    }
+
+    .letdiscuss__content--form {
+      grid-column: 4/span 8;
+
+      h2 {
+        font-size: 24px;
+        font-weight: 800;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        //display: grid;
+        //grid-template-columns: repeat(2, 1fr);
+
+        input {
+          border-bottom: 1px solid #c3c6c7;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          padding: 20px 0;
+          width: 300px;
+          font-size: 13px;
+          color: #c3c6c7;
+          font-weight: 600;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .content--form__send {
+        text-align: right;
+        margin-top: 40px;
+        cursor: pointer;
+
+        h2 {
+          font-size: 16px;
+          font-weight: 600;
+
+          span {
+            color: #0eb493;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .letdiscuss__content--icon {
+      grid-column: 12;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #c3c6c7;
+      font-size: 1.2rem;
+      font-weight: 600;
+
+      .fab {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .letdiscuss__content {
+      .letdiscuss__content--form {
+        form {
+          input {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1011px) {
+    .letdiscuss__content {
+
+      .letdiscuss__content--form {
+        grid-column: 4/span 8;
+
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          input {
+            max-width: 280px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .letdiscuss__content {
+
+      .letdiscuss__content--title {
+        grid-column: 1/span 12;
+        text-align: right;
+
+        p {
+          grid-column: 1/span 12;
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 40px;
+        }
+      }
+
+      .letdiscuss__content--form {
+        grid-column: 1/span 11;
+
+        form {
+          gap: 20px;
+
+          input {
+            min-width: 200px;
+          }
+        }
+
+        .content--form__send {
+          margin-right: 40px;
+        }
+      }
+
+      .letdiscuss__content--icon {
+        .fab {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 791px) {
+    .letdiscuss__content {
+
+      .letdiscuss__content--form {
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          input {
+            max-width: 20px;
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 668px) {
+    .letdiscuss__content {
+      .letdiscuss__content--form {
+        grid-column: 1/span 11;
+
+        form {
+          input {
+            min-width: 200px;
+          }
+        }
+
+        .content--form__send {
+          text-align: center;
+        }
+      }
+
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .letdiscuss__content {
+      .letdiscuss__content--form {
+        form {
+          input {
+            max-width: 350px;
+          }
+        }
+      }
+
+      .content--icon {
+
+      }
+    }
+  }
+}
