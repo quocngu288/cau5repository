@@ -6,7 +6,7 @@ const handleClickOpenSidebar=()=> {
 const handleClickCloseSidebar=()=> {
     document.querySelector('.sidebar').classList.remove("opensidebar")
 }
-
+//----------------------------------------------------------------------------------------------------------
 var modal = document.getElementById("myModal");
 function clickToShowModal(obj){
     var modalImg = document.getElementById("img01");
@@ -22,6 +22,7 @@ function closeModal(){
 modal.style.display="none"
 }
 
+//---------------------------------------------------------------------------------------------------------
 btnTop=document.getElementById("btnTotop");
 window.onscroll=function (){scrollFunction()}
 function scrollFunction(){
@@ -36,3 +37,6 @@ function topFunc (){
     document.documentElement.scrollTop = 0;
 
 }
+//------------------------------------------------------------------------------------------
+
+

@@ -1,25 +1,25 @@
 .header--wrap {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 800px;
-  max-width: 1600px;
-  background-image: url("../img/headerimg.png");
+
+  height: 70px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 70px;
+    background-color: rgba(14, 42, 41, 0.9);
+    position: absolute;
+  }
 
   .navbar {
     padding: 0 10%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 70px;
 
-    background-image: url("../img/nav.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-//position: fixed;s
-//    top: 0;
-//left: 0;
     .navbar-left {
       display: flex;
       justify-content: space-between;
@@ -28,7 +28,7 @@
 
       .navbar-left_brand {
         font-family: 'Pacifico', cursive;
-        font-size: 1.5rem;
+        font-size: 28px;
         color: #fff;
       }
 
@@ -41,9 +41,9 @@
           border-right: none;
           border-bottom: none;
           background: none;
-          font-size: 0.8rem;
-          text-align: center;
+          font-size: 13px;
           color: #FFFFFF;
+          //text-align: center;
 
           &:focus {
             outline: none;
@@ -60,32 +60,38 @@
       text-align: center;
       width: 100vw;
       justify-content: end;
-      margin-right: 2rem;
       visibility: visible;
 
       .nav-item {
         cursor: pointer;
-        padding: 0 0.5rem;
+        padding: 0 13px 0 13px;
+
         .nav-links--line {
           width: 0;
-          height: 4px;
+          height: 2px;
           background-color: #32b0ee;
           transition: all 0.5s;
+          //z-index: 100;
+          //width: 100%;
         }
 
         .nav-links {
           color: #fff;
-          font-size: 0.8rem;
+          font-size: 13px;
           line-height: 70px;
           text-decoration: none;
-          //padding: 0.5rem 1rem;
         }
 
         &:hover > .nav-links--line {
           width: 100%;
         }
       }
-      @media screen and (max-width: 768px){
+
+      .nav-item:nth-child(5) {
+        padding: 0 0 0 13px;
+      }
+
+      @media screen and (max-width: 768px) {
         visibility: hidden;
       }
     }
@@ -94,89 +100,25 @@
       position: absolute;
       right: 10%;
       visibility: hidden;
+
       .fas {
         color: #FFFFFF;
         font-size: 25px;
       }
-      @media screen and (max-width: 768px){
+
+      @media screen and (max-width: 768px) {
         visibility: visible;
       }
     }
-    }
-
   }
 
-  .carousel {
-    height: 700px;
-    display: flex;
-    top: 50%;
-    justify-content: center;
+}
 
-    .carousel__content {
-      text-align: center;
 
-      .carousel__content--head {
-        font-size: 3rem;
-        font-weight: 100;
+@media #{$info-phone} {
 
-        span {
-          font-weight: bold;
-        }
-      }
+}
 
-      .carousel__content--note {
-        color: #0eb493;
-        font-size: 2.3rem;
-        font-weight: 100;
-
-        span {
-          color: #FFFFFF;
-        }
-      }
-
-      .carousel__content--foot {
-        font-size: 1.5rem;
-        font-weight: 100;
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        justify-content: center;
-        align-items: center;
-        grid-gap: 15px;
-        margin-top: 15px;
-        p{
-          font-size: 0.8rem;
-
-        }
-        .carousel__content--line {
-          height: 2px;
-          width: 30px;
-          background-color: #0eb493;
-        }
-      }
-
-      .carousel__icon {
-        margin-top: 110px;
-        //grid-template-columns: repeat(4, auto);
-        grid-gap: 15px;
-
-        i {
-          margin: 0 5px;
-          color: rgba(255, 255, 255, 0.5);
-          cursor: pointer;
-
-          &:hover {
-            color: rgba(255, 255, 255, 1);
-          }
-        }
-      }
-
-      color: #FFFFFF;
-    }
-  }
-
-  @media #{$info-phone} {
-
-  }
 //  @media screen and (max-width: 768px) {
 //
 //    .navbar {
@@ -223,14 +165,3 @@
   }
 }
 
-.header--wrap1 {
-  background-image: url("../img/headerimg.png");
-}
-
-.header--wrap2 {
-  background-image: url("../img/headerimg1.png");
-}
-
-.header--wrap3 {
-  background-image: url("../img/headerimg2.png");
-}

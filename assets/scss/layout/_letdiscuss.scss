@@ -6,16 +6,16 @@
 
     h2 {
       text-align: center;
-      font-size: 1.6rem;
+      font-size: 28px;
       font-weight: 800;
       color: #0eb493;
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 18px;
       font-weight: 600;
       text-align: center;
-      padding: 0 10%;
+      padding: 0 20%;
     }
   }
 
@@ -24,17 +24,17 @@
     grid-template-columns: repeat(12, 1fr);
     padding: 0 10%;
 
-    .content--title {
+    .letdiscuss__content--title {
       grid-column: 1/span 3;
 
       h2 {
-        font-size: 1rem;
+        font-size: 22px;
         font-weight: 600;
       }
 
       p {
         grid-column: 1/span 2;
-        font-size: 0.8rem;
+        font-size: 13px;
         width: 55%;
         padding-top: 40px;
         color: #c3c6c7;
@@ -42,11 +42,11 @@
       }
     }
 
-    .content--form {
+    .letdiscuss__content--form {
       grid-column: 4/span 8;
 
       h2 {
-        font-size: 1.2rem;
+        font-size: 24px;
         font-weight: 800;
       }
 
@@ -64,7 +64,7 @@
           border-right: none;
           padding: 20px 0;
           width: 300px;
-          font-size: 0.8rem;
+          font-size: 13px;
           color: #c3c6c7;
           font-weight: 600;
 
@@ -80,7 +80,7 @@
         cursor: pointer;
 
         h2 {
-          font-size: 1rem;
+          font-size: 16px;
           font-weight: 600;
 
           span {
@@ -91,7 +91,7 @@
       }
     }
 
-    .content--icon {
+    .letdiscuss__content--icon {
       grid-column: 12;
       display: flex;
       flex-direction: column;
@@ -109,7 +109,7 @@
 
   @media screen and (max-width: 1200px) {
     .letdiscuss__content {
-      .content--form {
+      .letdiscuss__content--form {
         form {
           input {
             width: 250px;
@@ -121,7 +121,7 @@
   @media screen and (max-width: 1011px) {
     .letdiscuss__content {
 
-      .content--form {
+      .letdiscuss__content--form {
         grid-column: 4/span 8;
 
         form {
@@ -139,7 +139,7 @@
   @media screen and (max-width: 960px) {
     .letdiscuss__content {
 
-      .content--title {
+      .letdiscuss__content--title {
         grid-column: 1/span 12;
         text-align: right;
 
@@ -151,7 +151,7 @@
         }
       }
 
-      .content--form {
+      .letdiscuss__content--form {
         grid-column: 1/span 11;
 
         form {
@@ -167,7 +167,7 @@
         }
       }
 
-      .content--icon {
+      .letdiscuss__content--icon {
         .fab {
           margin-bottom: 25px;
         }
@@ -177,7 +177,7 @@
   @media screen and (max-width: 791px) {
     .letdiscuss__content {
 
-      .content--form {
+      .letdiscuss__content--form {
         form {
           display: flex;
           flex-wrap: wrap;
@@ -193,7 +193,7 @@
   }
   @media screen and (max-width: 668px) {
     .letdiscuss__content {
-      .content--form {
+      .letdiscuss__content--form {
         grid-column: 1/span 11;
 
         form {
@@ -211,7 +211,7 @@
   }
   @media screen and (max-width: 560px) {
     .letdiscuss__content {
-      .content--form {
+      .letdiscuss__content--form {
         form {
           input {
             max-width: 350px;
