@@ -34,6 +34,7 @@
       @media screen and (max-width: 990px) {
         width: 100%;
       }
+
       .navtab-item {
         padding: 5px 20px;
         border: inherit;
@@ -46,6 +47,7 @@
           font-weight: 700;
           font-size: 14px;
           white-space: nowrap;
+          cursor: pointer;
         }
 
         @media screen and (max-width: 990px) {
@@ -57,6 +59,8 @@
         @media screen and (max-width: 576px) {
           padding: 5px;
         }
+
+
       }
 
       .navtab-item.active {
@@ -113,10 +117,10 @@
           top: 0;
           opacity: 0;
           transition: all 0.5s;
-          @media screen and (max-width: 1028px){
+          @media screen and (max-width: 1028px) {
             padding: 25px 25px 25px 25px;
           }
-          @media screen and (max-width: 890px){
+          @media screen and (max-width: 890px) {
             padding: 10px;
           }
           @media screen and (max-width: 768px) {
@@ -125,6 +129,7 @@
           @media screen and (max-width: 576px) {
             padding: 30px 20px 0 20px;
           }
+
           .fas {
             padding: 10px;
             text-align: center;
@@ -132,10 +137,10 @@
             border-radius: 50%;
             color: #FFFFFF;
             margin-bottom: 20px;
-            @media screen and (max-width: 890px){
+            @media screen and (max-width: 890px) {
               padding: 5px;
             }
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
               padding: 10px;
             }
           }
@@ -144,10 +149,10 @@
             font-size: 18px;
             color: #FFFFFF;
             font-weight: bolder;
-            @media screen and (max-width: 890px){
+            @media screen and (max-width: 890px) {
               font-size: 16px;
             }
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
               font-size: 18px;
             }
           }
@@ -156,10 +161,10 @@
             color: #FFFFFF;
             font-size: 14px;
             padding: 5px;
-            @media screen and (max-width: 890px){
+            @media screen and (max-width: 890px) {
               font-size: 13px;
             }
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
               font-size: 14px;
             }
           }

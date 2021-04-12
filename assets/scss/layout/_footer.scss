@@ -190,7 +190,7 @@ footer {
     line-height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: #32b0ee;
+    background-color: #0eb493;
     text-align: center;
     cursor: pointer;
     animation: play 2s ease infinite;
@@ -198,7 +198,7 @@ footer {
     z-index: 50;
 
     .fas {
-      color: #FFF;
+      color: #000;
       font-size: 1.5rem;
       font-weight: bold;
     }
@@ -210,13 +210,13 @@ footer {
       transform: scale(1);
     }
     15% {
-      box-shadow: 0 0 0 5px rgba(50, 176, 238, 0.4);
+      box-shadow: 0 0 0 5px rgba(14, 180, 147, 0.4);
     }
     25% {
-      box-shadow: 0 0 0 10px rgba(50, 176, 238, 0.4), 0 0 0 20px rgba(50, 176, 238, 0.2);
+      box-shadow: 0 0 0 10px rgba(14, 180, 147, 0.4), 0 0 0 20px rgba(14, 180, 147, 0.2);
     }
     25% {
-      box-shadow: 0 0 0 15px rgba(50, 176, 238, 0.4), 0 0 0 30px rgba(50, 176, 238, 0.2);
+      box-shadow: 0 0 0 15px rgba(14, 180, 147, 0.4), 0 0 0 30px rgba(14, 180, 147, 0.2);
     }
   }
   @media screen and (max-width: 1080px) {
