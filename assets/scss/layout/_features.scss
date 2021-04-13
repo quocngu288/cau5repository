@@ -2,6 +2,8 @@
   background-color: #f4f7f9;
   height: 430px;
   padding: 70px 0 0 0;
+  width: 100%;
+
   .features__title {
 
     h2 {
@@ -11,9 +13,12 @@
       color: #0eb493;
     }
   }
-  .features__wrap {
-    padding: 0 10%;
 
+  .features__wrap {
+
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
     .wrap-item {
       display: flex;
 
@@ -24,18 +29,20 @@
           display: inline-block;
           text-align: center;
           border: 1px solid #0eb493;
-        height: 40px;
+          height: 40px;
           width: 40px;
           border-radius: 50%;
           color: #0eb493;
           padding: 10px 10px 10px 10px;
         }
       }
+
       .item--header {
         h2 {
           font-size: 20px;
           font-weight: bolder;
         }
+
         p {
           margin: 20px 0;
           font-size: 13px;
@@ -43,13 +50,16 @@
         }
       }
     }
-    .owl-nav{
+
+    .owl-nav {
       display: none;
     }
-    .owl-dots{
+
+    .owl-dots {
       margin-top: 50px;
       text-align: center;
-      .owl-dot{
+
+      .owl-dot {
         display: block;
         height: 8px;
         width: 8px;
@@ -58,11 +68,13 @@
         border-radius: 50%;
         border: 1px solid #c3c6c7;
         margin-right: 10px;
+
         &:focus {
           outline: none;
         }
       }
-      .owl-dot.active{
+
+      .owl-dot.active {
         background: #000000;
       }
     }

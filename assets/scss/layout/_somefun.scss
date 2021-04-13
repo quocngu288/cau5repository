@@ -40,7 +40,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 110px;
     z-index: 9;
-    padding: 0 10%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 
     .content--item {
       z-index: 9;
