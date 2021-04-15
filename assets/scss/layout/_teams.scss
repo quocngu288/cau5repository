@@ -1,6 +1,7 @@
 .teams {
   padding: 80px 0 30px 0;
-width: 100%;
+  width: 100%;
+
   .teams__title {
     padding: 0 0 55px 0;
 
@@ -25,82 +26,53 @@ width: 100%;
     margin: 0 auto;
     text-align: center;
 
-    //.owl-item{
-    //  margin-right: 30px !important;
-      .teams__content--item {
-        .item--wrap {
-          position: relative;
 
-          .item__detail {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(29, 177, 147, 0.9);
-            transition: all 0.5s;
-            opacity: 0;
+    .teams__content--item {
+      .item--wrap {
+        position: relative;
+
+        .item__detail {
+          position: absolute;
+          top: 0;
+          height: 100%;
+          background: rgba(29, 177, 147, 0.9);
+          transition: all 0.5s;
+          opacity: 0;
+          text-align: center;
+          display: flex;
+          align-items: center;
+
+          .wrap--content {
             padding: 20px 20px;
 
             h2 {
               font-weight: bolder;
               font-size: 16px;
               color: #FFFFFF;
-              @media screen and (max-width: 1110px) {
-                font-size: 14px;
-              }
-              @media screen and (max-width: 999px) {
-                font-size: 16px;
-              }
-              @media screen and (max-width: 840px){
-                font-size: 14px;
-              }
-              @media screen and (max-width: 740px){
-                font-size: 16px;
-              }
-              @media screen and (max-width: 560px){
-                font-size: 14px;
-              }
-              @media screen and (max-width: 450px){
-                font-size: 16px;
-              }
+
             }
 
             p {
               margin: 20px 0 70px 0;
               font-size: 16px;
               color: #FFFFFF;
-              @media screen and (max-width: 1200px) {
-                margin: 15px 0 50px 0;;
+              @media screen and (max-width: 1110px) {
+                margin: 15px 0 30px 0;
               }
-              @media screen and (max-width: 1080px) {
-                margin: 15px 0 40px 0;
-                font-size: 14px;
-
-              }
-
               @media screen and (max-width: 999px) {
                 margin: 20px 0 70px 0;
-                font-size: 16px;
               }
-              @media screen and (max-width: 840px) {
-                padding: 10px 0 20px 0;
-                font-size: 14px;
+              @media screen and (max-width: 874px) {
+                margin: 15px 0 30px 0;
               }
               @media screen and (max-width: 740px) {
-                padding: 10px 0 30px 0;
-                font-size: 16px;
+                margin: 20px 0 70px 0;
               }
-              @media screen and (max-width: 620px) {
-                padding: 10px 0 20px 0;
+              @media screen and (max-width: 546px) {
+                margin: 15px 0 30px 0;
               }
-              @media screen and (max-width: 560px) {
-                padding: 10px 0 10px 0;
-                font-size: 14px;
-              }
-              @media screen and (max-width: 450px) {
-                padding: 20px 0 40px 0;
-                font-size: 16px;
+              @media screen and (max-width: 499px) {
+                margin: 20px 0 70px 0;
               }
             }
 
@@ -114,69 +86,51 @@ width: 100%;
                 line-height: 40px;
                 margin: 0 2px;
                 width: 40px;
-                @media screen and (max-width: 1070px) {
-                  line-height: 40px;
-                  width: 40px;
-                }
-                @media screen and (max-width: 740px) {
-                  line-height: 35px;
-                  width: 35px;
-                }
-
-
               }
             }
-            //@media screen and (max-width: 1200px) {
-            //  padding: 10px 10px;
-            //}
             @media screen and (max-width: 1110px) {
-              padding: 15px 15px;
+             padding: 15px 15px;
             }
-
             @media screen and (max-width: 999px) {
-              padding: 20px 20px;
+              padding: 20px 15px;
             }
-            @media screen and (max-width: 840px) {
+            @media screen and (max-width: 874px) {
               padding: 15px 10px;
             }
             @media screen and (max-width: 740px) {
-              padding: 30px 15px;
+              padding: 20px 15px;
             }
-            @media screen and (max-width: 620px) {
-              padding: 15px 10px;
-            }
-            @media screen and (max-width: 450px) {
-              padding: 30px 15px;
+            @media screen and (max-width: 499px) {
+              padding: 20px 20px;
             }
           }
-        }
-
-        .item__title {
-          h2 {
-            margin-top: 20px;
-            font-size: 1rem;
-            font-weight: bolder;
-          }
-
-          p {
-            padding-top: 5px;
-            font-size: 0.6rem;
-          }
-        }
-
-        &:hover .item--wrap .item__detail {
-          opacity: 1;
         }
       }
-    //}
 
+      .item__title {
+        h2 {
+          margin-top: 20px;
+          font-size: 1rem;
+          font-weight: bolder;
+        }
 
+        p {
+          padding-top: 5px;
+          font-size: 0.6rem;
+        }
+      }
+
+      &:hover .item--wrap .item__detail {
+        opacity: 1;
+      }
+    }
     .owl-nav {
       display: none;
     }
 
     .owl-dots {
       margin-top: 50px;
+      margin-bottom: 80px;
       text-align: center;
 
       .owl-dot {
@@ -184,7 +138,6 @@ width: 100%;
         height: 8px;
         width: 8px;
         display: inline-block;
-        background: #c3c6c7;
         border-radius: 50%;
         border: 1px solid #c3c6c7;
         margin-right: 10px;

@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap"
           rel="stylesheet">
@@ -25,16 +25,16 @@
 </head>
 <body>
 
-<header class="header--wrap">
+<header>
     <div class="navbar">
-        <div class="navbar-left">
+        <div class="navbar__left">
 
-            <div class="navbar-left_brand">Brandi</div>
-            <div class="navbar-left_input">
+            <div class="navbar__left--brand">Brandi</div>
+            <div class="navbar__left--input">
                 <input placeholder="    I'am your tag line"/>
             </div>
         </div>
-        <ul class="nav-right nav-menu">
+        <ul class="nav__right nav-menu">
             <li class="nav-item">
                 <div class="nav-links--line"></div>
                 <a class="nav-links" href="#home"> Home</a>
@@ -56,7 +56,7 @@
                 <a class="nav-links" href="#contact">Contact</a>
             </li>
         </ul>
-        <div class="navbar-left_hamburgur" onclick="handleClickOpenSidebar()">
+        <div class="navbar__hamburgur" onclick="handleClickOpenSidebar()">
             <i class="fas fa-bars"></i>
         </div>
     </div>
@@ -90,7 +90,41 @@
     </ul>
 </aside>
 <section id="home" class="owl-carousel baner owl-caro1">
-    <div class="baner__item item">
+    <div class="baner__item item" style="background-image: url('./assets/img/headerimg.png')">
+        <div class="baner__content">
+            <p class="baner__content--head">Meet <span>Brandi</span>!</p>
+            <p class="baner__content--note">/created <span>one page template</span></p>
+            <div class="baner__content--foot">
+                <span class="baner__content--line"></span>
+                <p>We are team of professionals</p>
+                <span class="baner__content--line"></span>
+            </div>
+            <div class="baner__icon">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-dribbble"></i>
+            </div>
+        </div>
+    </div>
+    <div class="baner__item item" style="background-image: url('./assets/img/headerimg1.png')">
+        <div class="baner__content">
+            <p class="baner__content--head">Meet <span>Brandi</span>!</p>
+            <p class="baner__content--note">/created <span>one page template</span></p>
+            <div class="baner__content--foot">
+                <span class="baner__content--line"></span>
+                <p>We are team of professionals</p>
+                <span class="baner__content--line"></span>
+            </div>
+            <div class="baner__icon">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-dribbble"></i>
+            </div>
+        </div>
+    </div>
+    <div class="baner__item item" style="background-image: url('./assets/img/headerimg2.png')">
         <div class="baner__content">
             <p class="baner__content--head">Meet <span>Brandi</span>!</p>
             <p class="baner__content--note">/created <span>one page template</span></p>
@@ -345,19 +379,21 @@
             <div class="item--wrap">
                 <img src="assets/img/team1.png"/>
                 <div class="item__detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                 <div class="wrap--content">
+                     <h2>
+                         Nemo enim ipsam
+                         voluptatem quia
+                     </h2>
+                     <p>
+                         sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                          ratione voluptatem.voluptatem.
-                    </p>
-                    <div class="detail-social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
+                     </p>
+                     <div class="detail-social">
+                         <i class="fab fa-twitter"></i>
+                         <i class="fab fa-facebook-f"></i>
+                         <i class="fab fa-google-plus-g"></i>
+                     </div>
+                 </div>
                 </div>
             </div>
             <div class="item__title">
@@ -369,18 +405,20 @@
             <div class="item--wrap">
                 <img src="assets/img/team2.png"/>
                 <div class="item__detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                         ratione voluptatem voluptatem.
-                    </p>
-                    <div class="detail-social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -393,18 +431,20 @@
             <div class="item--wrap">
                 <img src="assets/img/team3.png"/>
                 <div class="item__detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        ratione voluptatem.voluptatem.
-                    </p>
-                    <div class="detail-social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -417,18 +457,20 @@
             <div class="item--wrap">
                 <img src="assets/img/team4.png"/>
                 <div class="item__detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        ratione voluptatem.voluptatem.
-                    </p>
-                    <div class="detail-social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -465,18 +507,20 @@
             <div class="item--wrap">
                 <img src="assets/img/team2.png"/>
                 <div class="item__detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia voluptas
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        ratione voluptatem.voluptatem.
-                    </p>
-                    <div class="detail-social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -489,18 +533,20 @@
             <div class="item--wrap">
                 <img src="assets/img/team3.png"/>
                 <div class="item__detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        ratione voluptatem.voluptatem.
-                    </p>
-                    <div class="detail-social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -513,18 +559,20 @@
             <div class="item--wrap">
                 <img src="assets/img/team4.png"/>
                 <div class="item__detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        ratione voluptatem.voluptatem.
-                    </p>
-                    <div class="detail-social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -537,18 +585,20 @@
             <div class="item--wrap">
                 <img src="assets/img/team1.png"/>
                 <div class="item__detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                      voluptatem.
-                    </p>
-                    <div class="detail-social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -646,7 +696,7 @@
             <h2 class="footer__item1--brand">Brandi</h2>
             <p>
                 eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                ullamco laboris nisi ut aliquip ex ea eusmod tempor incididunt
+                ullamco laboris nisi ut aliquip ex ea eusmod tempor incididunt eusmod
             </p>
         </div>
         <div class="footer__item2">
@@ -697,11 +747,10 @@
             </p>
         </div>
     </div>
-
-    <div id="btnTotop" onclick="topFunc()">
-        <i class="fas fa-arrow-up"></i>
-    </div>
 </footer >
+<div id="btnTotop" onclick="topFunc()">
+    <i class="fas fa-arrow-up"></i>
+</div>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -718,7 +767,7 @@
     var owl3 = $('.owl-caro3');
     owl1.owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 0,
         nav: true,
         responsive: {
             0: {
@@ -735,7 +784,7 @@
     // $
     owl2.owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 30,
         nav: true,
         responsive: {
             0: {

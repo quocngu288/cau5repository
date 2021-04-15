@@ -1,11 +1,10 @@
-.baner{
-
+.baner {
   .baner__item {
     height: 800px;
     //height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: url("../img/headerimg.png");
+    //background-image: url("../img/headerimg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,14 +16,17 @@
       padding-top: 250px;
       height: 600px;
     }
+
     .baner__content {
       text-align: center;
+
       .baner__content--head {
         font-size: 62px;
         font-weight: 100;
         @media screen and (max-width: 560px) {
           font-size: 52px;
         }
+
         span {
           font-weight: 400;
         }
@@ -38,6 +40,7 @@
         @media screen and (max-width: 560px) {
           font-size: 38px;
         }
+
         span {
           color: #FFFFFF;
         }
@@ -55,10 +58,12 @@
         @media screen and (max-width: 560px) {
           font-size: 13px;
         }
-        p{
+
+        p {
           font-size: 0.8rem;
 
         }
+
         .baner__content--line {
           height: 2px;
           width: 30px;
@@ -83,6 +88,39 @@
       }
 
       color: #FFFFFF;
+    }
+  }
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    z-index: 5;
+    display: grid;
+    grid-gap: 10px;
+
+    .owl-dot {
+      display: block;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      border: 1px solid #c3c6c7;
+      opacity: 0.3;
+      //margin-right: 4px;
+
+      &:focus {
+        outline: none;
+        background: #FFFFFF;
+        opacity: 1;
+      }
+    }
+
+    .owl-dot.active {
+      background: #FFFFFF;
+      opacity: 1;
     }
   }
 }

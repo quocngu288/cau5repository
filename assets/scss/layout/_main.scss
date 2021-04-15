@@ -33,19 +33,25 @@
     left: 52%;
   }
 
-  //&:after{
-  //  content: "";
-  //  position: absolute;
-  //  width: 90px;
-  //  height: 1px;
-  //  background: #c3c6c7;
-  //  transform: translateY(-50%);
-  //}
-  //.line-title--line{
-  //  height: 1px;
-  //  width:90px;
-  //  background-color: #c3c6c7;
-  //
-  //}
 }
 
+#btnTotop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  line-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #0eb493;
+  text-align: center;
+  cursor: pointer;
+  animation: play 2s ease infinite;
+  display: none;
+  z-index: 50;
+
+  .fas {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
