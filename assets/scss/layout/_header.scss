@@ -15,7 +15,7 @@ header {
 
   .navbar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     padding: 0 15px;
@@ -31,30 +31,25 @@ header {
       align-items: center;
 
 
-      .navbar__left--brand {
+      .navbar-brandi {
         font-family: 'Pacifico', cursive;
         font-size: 28px;
         color: #fff;
         cursor: pointer;
       }
 
-      .navbar__left--input {
-        margin: 0 0 0 30px;
-
-        input {
-          border-left: 1px solid #32b0ee;;
-          border-top: none;
-          border-right: none;
-          border-bottom: none;
-          background: none;
-          font-size: 13px;
-          color: #FFFFFF;
-          //text-align: center;
-
-          &:focus {
-            outline: none;
-          }
-        }
+      .navbar-text {
+        margin: 0 0 0 20px;
+        padding-left: 20px;
+        width: 130px;
+        border-left: 1px solid #32b0ee;;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        background: none;
+        font-size: 13px;
+        color: #c3c6c7;
+        white-space: nowrap;
       }
     }
 
@@ -64,13 +59,12 @@ header {
       grid-gap: 6px;
       list-style: none;
       text-align: center;
-      width: 100vw;
-      justify-content: end;
+
       visibility: visible;
 
       .nav-item {
         cursor: pointer;
-        padding: 0 13px 0 13px;
+
 
         .nav-links--line {
           width: 0;
@@ -86,13 +80,18 @@ header {
           font-size: 13px;
           line-height: 70px;
           text-decoration: none;
+          padding: 0 13px 0 13px;
         }
 
         &:hover > .nav-links--line {
           width: 100%;
         }
       }
-
+      .nav-item:nth-child(5){
+       .nav-links{
+         padding: 0 0 0 13px;
+       }
+      }
       .nav-item:nth-child(5) {
         padding: 0 0 0 13px;
       }
@@ -102,7 +101,7 @@ header {
       }
     }
 
-    .navbar__hamburgur {
+    .navbar__hamburger {
       position: absolute;
       right: 3%;
       visibility: hidden;

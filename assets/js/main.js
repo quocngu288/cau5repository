@@ -12,8 +12,10 @@ function clickToShowModal(obj){
     var modalImg = document.getElementById("img01");
 
     var parentObj=obj.parentNode
-    console.log(parentObj)
-    image=parentObj.children[0]
+    var parentObj1=parentObj.parentNode.parentNode
+    // console.log(parentObj())
+    console.log(parentObj1)
+    image=parentObj1.children[0]
     modalImg.src=image.src
     modal.style.display = "block";
 }
@@ -21,6 +23,8 @@ function closeModal(){
     // var span = document.getElementsByClassName("close")[0];
 modal.style.display="none"
 }
+
+
 
 //---------------------------------------------------------------------------------------------------------
 btnTop=document.getElementById("btnTotop");

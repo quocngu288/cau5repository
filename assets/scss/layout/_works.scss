@@ -1,9 +1,9 @@
 .works {
-  padding: 80px 0 30px 0;
+padding-top: 90px;
 
   .works__title {
 
-    padding: 0 0 55px 0;
+    margin: 0 0 55px 0;
 
     h2 {
       text-align: center;
@@ -16,7 +16,7 @@
       font-size: 18px;
       font-weight: 600;
       text-align: center;
-      padding: 0 20%;
+      margin: 0 20%;
     }
   }
 
@@ -47,7 +47,15 @@
           font-size: 14px;
           white-space: nowrap;
           cursor: pointer;
+          &:focus,&:hover,&.active{
+            color: #fff;
+            font-weight: 700;
+            background: #0eb493;
+            padding: 10px 20px;
+            border-radius: 10px;
+          }
         }
+
 
         @media screen and (max-width: 990px) {
           padding: 10px 15px;
@@ -62,22 +70,22 @@
 
       }
 
-      .navtab-item.active {
-        .navtab--links {
-          color: #fff;
-          font-weight: 700;
-          background: #0eb493;
-          padding: 10px 20px;
-          border-radius: 10px;
-          @media screen and (max-width: 576px) {
-            padding: 10px 15px;
-          }
-        }
-
-        @media screen and (max-width: 1220px) {
-          padding: 5px;
-        }
-      }
+      //.navtab-item.active {
+      //  .navtab--links {
+      //    color: #fff;
+      //    font-weight: 700;
+      //    background: #0eb493;
+      //    padding: 10px 20px;
+      //    border-radius: 10px;
+      //    @media screen and (max-width: 576px) {
+      //      padding: 10px 15px;
+      //    }
+      //  }
+      //
+      //  @media screen and (max-width: 1220px) {
+      //    padding: 5px;
+      //  }
+      //}
 
       @media screen and (max-width: 1220px) {
         width: 45%;
@@ -95,13 +103,15 @@
       }
     }
 
-    .works__tab--content {
+    .tab-content{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-
-      .content__item {
+      .show{
+        display: block;
+      }
+      .tab-content__item{
         position: relative;
-
+display: none;
         img {
           width: 100%;
           display: block;
@@ -120,18 +130,7 @@
           transform: translateY(-50%);
           opacity: 0;
           transition: all 0.5s;
-          //@media screen and (max-width: 1028px) {
-          //  padding: 25px 25px 25px 25px;
-          //}
-          //@media screen and (max-width: 890px) {
-          //  padding: 10px;
-          //}
-          //@media screen and (max-width: 768px) {
-          //  padding: 50px 25px 0 25px;
-          //}
-          //@media screen and (max-width: 576px) {
-          //  padding: 30px 20px 0 20px;
-          //}
+
           .wrap-content{
             .fas {
               padding: 10px;

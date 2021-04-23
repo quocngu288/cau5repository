@@ -1,10 +1,8 @@
-.baner {
-  .baner__item {
+.slider {
+  .slider__item {
     height: 800px;
-    //height: 100vh;
     display: flex;
     justify-content: center;
-    //background-image: url("../img/headerimg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,10 +15,10 @@
       height: 600px;
     }
 
-    .baner__content {
+    .slider__content {
       text-align: center;
 
-      .baner__content--head {
+      .content-head {
         font-size: 62px;
         font-weight: 100;
         @media screen and (max-width: 560px) {
@@ -32,7 +30,7 @@
         }
       }
 
-      .baner__content--note {
+      .content-note {
         color: #0eb493;
         font-size: 48px;
         font-weight: 100;
@@ -46,7 +44,7 @@
         }
       }
 
-      .baner__content--foot {
+      .content-foot {
         font-size: 18px;
         font-weight: 100;
         display: grid;
@@ -64,14 +62,14 @@
 
         }
 
-        .baner__content--line {
+        .content-line {
           height: 2px;
           width: 30px;
           background-color: #0eb493;
         }
       }
 
-      .baner__icon {
+      .slider__icon {
         margin-top: 110px;
         //grid-template-columns: repeat(4, auto);
         grid-gap: 15px;

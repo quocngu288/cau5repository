@@ -1,9 +1,9 @@
 .teams {
-  padding: 80px 0 30px 0;
+
   width: 100%;
 
   .teams__title {
-    padding: 0 0 55px 0;
+    margin: 0 0 55px 0;
 
     h2 {
       text-align: center;
@@ -16,7 +16,7 @@
       font-size: 18px;
       font-weight: 600;
       text-align: center;
-      padding: 0 20%;
+      margin: 0 20%;
     }
   }
 
@@ -122,6 +122,9 @@
 
       &:hover .item--wrap .item__detail {
         opacity: 1;
+      }
+      &:hover h2{
+        color: #0eb493;
       }
     }
     .owl-nav {
