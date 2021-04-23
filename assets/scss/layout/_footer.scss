@@ -153,7 +153,7 @@ footer {
         color: #FFFFFF;
         margin-top: 65px;
         padding-left: 10px;
-        border-left: 1px solid #000;
+        border-left: 1px solid #062033;
 
         span:nth-child(1) {
           color: #0b0b0b;
@@ -165,7 +165,9 @@ footer {
         }
 
         span:nth-child(2) {
-          color: #0b0b0b;
+          color: #062033;
+          font-weight: 600;
+          font-size: 13px;
         }
 
         @media screen and (max-width: 690px) {
@@ -178,7 +180,7 @@ footer {
 
       .footer__info-bottom {
         padding-top: 60px;
-        color: #0b0b0b;
+        color: #062033;
         font-weight: 600;
         font-size: 13px;
         //white-space: nowrap;

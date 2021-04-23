@@ -1,9 +1,10 @@
 .features {
   background-color: #f4f7f9;
-  height: 430px;
+  height: 460px;
   width: 100%;
 
   .features__title {
+    margin-bottom: 70px;
 
     h2 {
       text-align: center;
@@ -14,10 +15,10 @@
   }
 
   .features__wrap {
-
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+
     .wrap-item {
       display: flex;
 
@@ -45,7 +46,7 @@
         p {
           margin: 20px 0;
           font-size: 13px;
-          color: #c3c6c7;
+          color: #062033;
         }
       }
     }

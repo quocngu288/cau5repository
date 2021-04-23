@@ -37,23 +37,23 @@
         </div>
         <ul class="nav__right nav-menu">
             <li class="nav-item">
-                <div class="nav-links--line"></div>
+
                 <a class="nav-links" href="#home"> Home</a>
             </li>
             <li class="nav-item">
-                <div class="nav-links--line"></div>
+
                 <a class="nav-links" href="#feature"> Features</a>
             </li>
             <li class="nav-item">
-                <div class="nav-links--line"></div>
+
                 <a class="nav-links" href="#work"> Works</a>
             </li>
             <li class="nav-item">
-                <div class="nav-links--line"></div>
+
                 <a class="nav-links" href="#team">Team</a>
             </li>
             <li class="nav-item">
-                <div class="nav-links--line"></div>
+
                 <a class="nav-links" href="#contact">Contact</a>
             </li>
         </ul>
@@ -63,57 +63,30 @@
     </div>
 </header>
 
-<section id="home" class="owl-carousel slider owl-caro1">
-    <div class="slider__item item" style="background-image: url('./assets/img/headerimg.png')">
-        <div class="slider__content">
-            <p class="content-head">Meet <span>Brandi</span>!</p>
-            <p class="content-note">/created <span>one page template</span></p>
-            <div class="content-foot">
-                <span class="content-line"></span>
-                <p>We are team of professionals</p>
-                <span class="content-line"></span>
-            </div>
-            <div class="slider__icon">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-dribbble"></i>
-            </div>
+<section id="home" class="slider">
+    <div class="owl-carousel owl-caro1">
+        <div class="slider__item item" style="background-image: url('./assets/img/headerimg.png')">
+        </div>
+        <div class="slider__item item" style="background-image: url('./assets/img/headerimg1.png')">
+        </div>
+        <div class="slider__item item" style="background-image: url('./assets/img/headerimg2.png')                   ">
         </div>
     </div>
-    <div class="slider__item item" style="background-image: url('./assets/img/headerimg1.png')">
-        <div class="slider__content">
-            <p class="content-head">Meet <span>Brandi</span>!</p>
-            <p class="content-note">/created <span>one page template</span></p>
-            <div class="content-foot">
-                <span class="content-line"></span>
-                <p>We are team of professionals</p>
-                <span class="content-line"></span>
-            </div>
-            <div class="slider__icon">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-dribbble"></i>
-            </div>
+
+    <div class="slider__content">
+        <p class="content-head">Meet <span>Brandi</span>!</p>
+        <p class="content-note">/created <span>one page template</span></p>
+        <div class="content-foot">
+            <span class="content-line"></span>
+            <p>We are team of professionals</p>
+            <span class="content-line"></span>
         </div>
     </div>
-    <div class="slider__item item" style="background-image: url('./assets/img/headerimg2.png')                   ">
-        <div class="slider__content">
-            <p class="content-head">Meet <span>Brandi</span>!</p>
-            <p class="content-note">/created <span>one page template</span></p>
-            <div class="content-foot">
-                <span class="content-line"></span>
-                <p>We are team of professionals</p>
-                <span class="content-line"></span>
-            </div>
-            <div class="slider__icon">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-dribbble"></i>
-            </div>
-        </div>
+    <div class="slider__icon">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-dribbble"></i>
     </div>
 </section>
 <aside class="sidebar">
@@ -672,7 +645,6 @@
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Email">
                 <input type="text" placeholder="Message">
-                <input type="text">
             </form>
             <div class="content--form__send">
                 <h2>
@@ -760,12 +732,11 @@
 <![endif]-->
 
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
 <script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.countup.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/js/carousel.js"></script>
-<script src="./assets/js/counter.js"></script>
 <!--    AOS lib-->
 <script src="./assets/js/filter.js"></script>
 <script src="./assets/js/main.js"></script>
@@ -777,7 +748,12 @@
 <!--        once: true,-->
 <!--    })-->
 <!--</script>-->
-
+<script>
+    $('.counter').countUp({
+        'time': 2000,
+        'delay': 10
+    });
+</script>
 </body>
 </html>
 

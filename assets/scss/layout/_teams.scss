@@ -3,7 +3,7 @@
   width: 100%;
 
   .teams__title {
-    margin: 0 0 55px 0;
+    margin: 0 0 110px 0;
 
     h2 {
       text-align: center;
@@ -17,6 +17,7 @@
       font-weight: 600;
       text-align: center;
       margin: 0 20%;
+      color: #062033;
     }
   }
 
@@ -110,13 +111,15 @@
       .item__title {
         h2 {
           margin-top: 20px;
-          font-size: 1rem;
+          font-size: 18px;
           font-weight: bolder;
+          color: #062033;
         }
 
         p {
           padding-top: 5px;
-          font-size: 0.6rem;
+          font-size: 13px;
+          color: #062033;
         }
       }
 
@@ -133,7 +136,6 @@
 
     .owl-dots {
       margin-top: 50px;
-      margin-bottom: 80px;
       text-align: center;
 
       .owl-dot {
