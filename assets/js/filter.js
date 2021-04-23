@@ -2,20 +2,20 @@
 
 function filterSelection(c) {
     let x, i;
-    let dot = document.getElementsByClassName("navtab--links");
+    // let dot = document.getElementsByClassName("navtab--links");
     x = document.getElementsByClassName("tab-content__item");
     if (c == 'all') c = '';
     for (i = 0; i < x.length; i++) {
         w3RemoveClass(x[i], "show");
         if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
     }
-    for (let i = 0; i < dot.length; i++) {
-        dot[i].addEventListener("click", ()=> {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    }
+    // for (let i = 0; i < dot.length; i++) {
+    //     dot[i].addEventListener("click", ()=> {
+    //         var current = document.getElementsByClassName("active");
+    //         current[0].className = current[0].className.replace(" active", "");
+    //         this.className += " active";
+    //     });
+    // }
 }
 
 function w3AddClass(element, name) {
@@ -40,3 +40,12 @@ function w3RemoveClass(element, name) {
 }
 
 filterSelection('all')
+
+let dot = document.getElementsByClassName("navtab--links");
+for (let i = 0; i < dot.length; i++) {
+    dot[i].addEventListener("click", ()=> {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
