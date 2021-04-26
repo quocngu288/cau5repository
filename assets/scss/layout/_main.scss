@@ -1,0 +1,88 @@
+.line-title {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 30px;
+
+  img {
+    margin: 20px auto;
+    display: block;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 1px;
+    background: #dce1e5;
+    transform: translateY(-50%);
+    transform: translateX(-15%);
+    top: 50%;
+    right: 52%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 1px;
+    background: #dce1e5;
+    transform: translateY(-50%);
+    transform: translateX(15%);
+    top: 50%;
+    left: 52%;
+  }
+
+}
+
+#btnTotop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  line-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #0eb493;
+  text-align: center;
+  cursor: pointer;
+  animation: play 2s ease infinite;
+  display: none;
+  z-index: 50;
+
+  .fas {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+.wrap--container{
+  padding: 90px 0 90px 0;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 0;
+  padding-top: 50px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+}

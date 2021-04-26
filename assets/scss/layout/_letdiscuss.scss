@@ -1,0 +1,215 @@
+.letdiscuss {
+
+  width: 100%;
+
+  .letdiscuss__title {
+    margin: 0 0 60px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 800;
+      color: #0eb493;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 20%;
+      color: #062033;
+    }
+  }
+
+  .letdiscuss__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .letdiscuss__content--title {
+      grid-column: 1/span 3;
+
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #062033;
+      }
+
+      p {
+        grid-column: 1/span 2;
+        font-size: 13px;
+        width: 55%;
+        padding-top: 40px;
+        color: #6a737b;
+        font-weight: 600;
+      }
+    }
+
+    .letdiscuss__content--form {
+      grid-column: 4/span 8;
+
+      h2 {
+        font-size: 24px;
+        font-weight: 800;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+
+        input {
+          border-bottom: 1px solid #c3c6c7;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          padding: 20px 0;
+          max-width: 100%;
+          font-size: 13px;
+          color: #6a737b;
+          font-weight: 600;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        input:nth-child(3){
+          grid-column: 1/span2;
+          margin-right: 40px;
+        }
+      }
+
+      .content--form__send {
+        text-align: right;
+        margin-top: 40px;
+        cursor: pointer;
+
+        h2 {
+          font-size: 16px;
+          font-weight: 600;
+          display: inline-block;
+          &:hover{
+            color: #0eb493;
+          }
+          span {
+            color: #0eb493;
+            margin-right: 5px;
+          }
+        }
+
+      }
+    }
+
+    .letdiscuss__content--icon {
+      grid-column: 12;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #cdd2d6;
+      font-size: 1.2rem;
+      font-weight: 600;
+
+      .fab {
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover{
+          font-weight: 800;
+          color: #3c3c3c;
+        }
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .letdiscuss__content {
+      .letdiscuss__content--title {
+        grid-column: 1/span 12;
+        text-align: right;
+
+        p {
+          grid-column: 1/span 12;
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+
+      .letdiscuss__content--form {
+        grid-column: 1/span 11;
+
+      }
+
+      .letdiscuss__content--icon {
+        grid-column: 12;
+
+        .fab {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 791px) {
+    .letdiscuss__content {
+      .letdiscuss__content--form {
+        form {
+          input {
+
+
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .letdiscuss__content {
+      .letdiscuss__content--form {
+        form {
+          display: grid;
+          grid-template-columns: none;
+          grid-gap: 20px;
+        }
+
+        .content--form__send {
+          text-align: left;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 490px) {
+    .letdiscuss__content {
+      .letdiscuss__content--title {
+        text-align: left;
+        width: 80%;
+        //h2{
+        //  width: 75%;
+        //}
+        //p{
+        //
+        //}
+      }
+
+      .letdiscuss__content--form {
+        grid-column: 1/span 12s;
+        width: 80%;
+
+        form {
+
+          input {
+
+          }
+        }
+      }
+
+      .letdiscuss__content--icon {
+        display: none;
+      }
+    }
+  }
+}
+

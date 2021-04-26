@@ -14,24 +14,746 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+<!--    AOS lib-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-
 </head>
 <body>
 
+<header>
+    <div class="navbar">
+        <div class="navbar__left">
+            <div class="navbar-brandi">Brandi</div>
+            <div class="navbar-text">
+                I'am your tag line
+            </div>
+        </div>
+        <ul class="nav__right nav-menu">
+            <li class="nav-item">
 
+                <a class="nav-links" href="#home"> Home</a>
+            </li>
+            <li class="nav-item">
 
+                <a class="nav-links" href="#feature"> Features</a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-links" href="#work"> Works</a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-links" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-links" href="#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="navbar__hamburger" onclick="handleClickOpenSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<section id="home" class="slider">
+    <div class="owl-carousel owl-caro1">
+        <div class="slider__item item" style="background-image: url('./assets/img/headerimg.png')">
+        </div>
+        <div class="slider__item item" style="background-image: url('./assets/img/headerimg1.png')">
+        </div>
+        <div class="slider__item item" style="background-image: url('./assets/img/headerimg2.png')                   ">
+        </div>
+    </div>
+
+    <div class="slider__content">
+        <p class="content-head">Meet <span>Brandi</span>!</p>
+        <p class="content-note">/created <span>one page template</span></p>
+        <div class="content-foot">
+            <span class="content-line"></span>
+            <p>We are team of professionals</p>
+            <span class="content-line"></span>
+        </div>
+    </div>
+    <div class="slider__icon">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-dribbble"></i>
+    </div>
+</section>
+<aside class="sidebar">
+    <div class="navbar-left_brand">Brandi
+        <i class="fas fa-times" onclick="handleClickCloseSidebar()"></i>
+    </div>
+
+    <ul class="nav-right nav-menu active">
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links"> Home</a>
+        </li>
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links"> Features</a>
+        </li>
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links"> Works</a>
+        </li>
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links">Team</a>
+        </li>
+        <li class="nav-item">
+            <div class="nav-links--line"></div>
+            <a class="nav-links">Contact</a>
+        </li>
+    </ul>
+</aside>
+<section id="feature" class="features wrap--container">
+    <div class="features__title">
+        <h2>FEATURES</h2>
+        <div class="line-title">
+            <span class="line-title--line"></span>
+            <!--            <i class="fas fa-heart"></i>-->
+            <img src="assets/img/hear.png">
+            <span class="line-title--line"></span>
+        </div>
+    </div>
+    <div class="features__wrap owl-carousel owl-caro2">
+        <div class="wrap-item item">
+            <div class="item--list">
+                <i class="fas fa-feather"></i>
+            </div>
+            <div class="item--header">
+                <h2>Branding</h2>
+                <p class="item--content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+            </div>
+        </div>
+        <div class="wrap-item item">
+            <div class="item--list">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="item--header">
+                <h2>Development</h2>
+                <p class="item--content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+            </div>
+        </div>
+        <div class="wrap-item item">
+            <div class="item--list">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="item--header">
+                <h2>Consulring</h2>
+                <p class="item--content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+            </div>
+        </div>
+        <div class="wrap-item item">
+            <div class="item--list">
+                <i class="fas fa-feather"></i>
+            </div>
+            <div class="item--header">
+                <h2>Branding</h2>
+                <p class="item--content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+            </div>
+        </div>
+        <div class="wrap-item item">
+            <div class="item--list">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="item--header">
+                <h2>Development</h2>
+                <p class="item--content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+            </div>
+        </div>
+        <div class="wrap-item item">
+            <div class="item--list">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="item--header">
+                <h2>Consulring</h2>
+                <p class="item--content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+            </div>
+        </div>
+        <div class="wrap-item item">
+            <div class="item--list">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="item--header">
+                <h2>Consulring</h2>
+                <p class="item--content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="work" class="works">
+    <div class="works__title">
+        <h2>WORKS</h2>
+        <div class="line-title">
+            <span class="line-title--line"></span>
+            <img src="assets/img/hear.png">
+            <span class="line-title--line"></span>
+        </div>
+        <p>
+            Owl Carousel 2.x.x is not compatibile with previous version 1.x.x. The idea stays the same and it has a lot
+            and it has a lot
+        </p>
+    </div>
+    <div class="works__tab">
+        <ul class="navtab" id="myBtnContainer">
+            <li class="navtab-item">
+                <a class="navtab--links active" onclick="filterSelection('all')">All</a>
+            </li>
+            <li class="navtab-item">
+                <a class="navtab--links" onclick="filterSelection('branding')">Branding</a>
+            </li>
+            <li class="navtab-item">
+                <a class="navtab--links" onclick="filterSelection('web')">Web</a>
+            </li>
+            <li class="navtab-item">
+                <a class="navtab--links" onclick="filterSelection('logodesign')">Logo Design</a>
+            </li>
+            <li class="navtab-item">
+                <a class="navtab--links" onclick="filterSelection('photography')">Photography</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-content__item branding">
+                <img src="./assets/img/item1.png">
+                <div class="content--detail">
+                     <div class="wrap-content">
+                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                         <h2>Labore et dolore magnam </h2>
+                         <p>Photography</p>
+                     </div>
+                </div>
+            </div>
+            <div class="tab-content__item web">
+                <img src="./assets/img/item2.png">
+                <div class="content--detail">
+                    <div class="wrap-content">
+                        <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                        <h2>Labore et dolore magnam </h2>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content__item branding">
+                <img src="./assets/img/item3.png">
+                <div class="content--detail">
+
+                    <div class="wrap-content">
+                        <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                        <h2>Labore et dolore magnam </h2>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content__item photography" >
+                <img src="./assets/img/item4.png">
+                <div class="content--detail">
+
+                    <div class="wrap-content">
+                        <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                        <h2>Labore et dolore magnam </h2>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content__item photography">
+                <img src="./assets/img/item5.png">
+                <div class="content--detail">
+                    <div class="wrap-content">
+                        <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                        <h2>Labore et dolore magnam </h2>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content__item web">
+                <img src="./assets/img/item6.png">
+                <div class="content--detail">
+                    <div class="wrap-content">
+                        <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                        <h2>Labore et dolore magnam </h2>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content__item branding">
+                <img src="./assets/img/item7.png">
+                <div class="content--detail">
+                    <div class="wrap-content">
+                        <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                        <h2>Labore et dolore magnam </h2>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content__item logodesign">
+                <img src="./assets/img/item8.png">
+                <div class="content--detail">
+                    <div class="wrap-content">
+                        <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                        <h2>Labore et dolore magnam </h2>
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+<section id="team" class="teams wrap--container">
+    <div class="teams__title">
+        <h2>MEET OUR TEAM </h2>
+        <div class="line-title">
+            <span class="line-title--line"></span>
+            <img src="assets/img/hear.png">
+            <span class="line-title--line"></span>
+        </div>
+        <p>
+            Owl Carousel 2.x.x is not compatibile with previous version 1.x.x. The idea stays the same and it has a lot
+            and it has a lot
+        </p>
+    </div>
+    <div class="teams__content owl-carousel owl-caro3">
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team1.png"/>
+                <div class="item__detail">
+                 <div class="wrap--content">
+                     <h2>
+                         Nemo enim ipsam
+                         voluptatem quia
+                     </h2>
+                     <p>
+                         sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                         ratione voluptatem.voluptatem.
+                     </p>
+                     <div class="detail-social">
+                         <i class="fab fa-twitter"></i>
+                         <i class="fab fa-facebook-f"></i>
+                         <i class="fab fa-google-plus-g"></i>
+                     </div>
+                 </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team2.png"/>
+                <div class="item__detail">
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team3.png"/>
+                <div class="item__detail">
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team4.png"/>
+                <div class="item__detail">
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team1.png"/>
+                <div class="item__detail">
+                    <h2>
+                        Nemo enim ipsam
+                        voluptatem quia
+                    </h2>
+                    <p>
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                        ratione voluptatem.voluptatem.
+                    </p>
+                    <div class="detail-social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team2.png"/>
+                <div class="item__detail">
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team3.png"/>
+                <div class="item__detail">
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team4.png"/>
+                <div class="item__detail">
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+        <div class="teams__content--item item">
+            <div class="item--wrap">
+                <img src="assets/img/team1.png"/>
+                <div class="item__detail">
+                    <div class="wrap--content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item__title">
+                <h2>Martin Machone</h2>
+                <p>Lead Develop</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section  class="somefun wrap--container">
+    <div class="somefun__title">
+        <h2>SOME FUN FACTS</h2>
+        <div class="line-title">
+            <span class="line-title--line"></span>
+            <img src="assets/img/hear1.png">
+            <span class="line-title--line"></span>
+        </div>
+    </div>
+    <div class="somefun__content">
+        <div class="content--item">
+            <i class="fas fa-clock"></i>
+            <h2 class="counter">3200</h2>
+            <p>HOUR OF WORK</p>
+        </div>
+        <div class="content--item">
+            <i class="fas fa-user-friends"></i>
+            <h2 class="counter">120</h2>
+            <p>SATIFIED CLINED</p>
+        </div>
+        <div class="content--item">
+            <i class="fas fa-rocket"></i>
+            <h2 class="counter">360</h2>
+            <p>PRIJECT DELIVERED</p>
+        </div>
+        <div class="content--item">
+            <i class="fas fa-trophy"></i>
+            <h2 class="counter">42</h2>
+            <p>AWARD WON</p>
+        </div>
+
+    </div>
+</section>
+<section class="letdiscuss wrap--container">
+    <div class="letdiscuss__title">
+        <h2>LET'S DISCUSS</h2>
+        <div class="line-title">
+            <span class="line-title--line"></span>
+            <img src="assets/img/hear.png">
+            <span class="line-title--line"></span>
+        </div>
+        <p>
+            Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+        </p>
+    </div>
+    <div class="letdiscuss__content">
+        <div class="letdiscuss__content--title">
+            <h2>Cras at ultrices erat, sed vulputate! </h2>
+            <p>2345 Setwant natrer, 1234,
+                Washington. United States.
+                (401) 1234 567
+                hello@brandi.com
+                ww.brandi.com</p>
+        </div>
+        <div class="letdiscuss__content--form">
+            <h2>Say Hello!</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Message">
+            </form>
+            <div class="content--form__send">
+                <h2>
+                    <span><i class="fas fa-envelope"></i></span>
+                    Send Message
+                </h2>
+            </div>
+        </div>
+        <div class="letdiscuss__content--icon">
+            <i class="fab fa-behance"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-dribbble"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+        </div>
+    </div>
+</section>
+<section class="map">
+    <!------------------------>
+</section >
+<footer class="wrap--container" id="contact">
+    <div class="footer__content">
+        <div class="footer__brandi">
+            <h2>Brandi</h2>
+            <p>
+                eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                ullamco laboris nisi ut aliquip ex ea eusmod tempor incididunt eusmod
+            </p>
+        </div>
+        <div class="footer__subscribe">
+            <h2>Subscribe</h2>
+            <div class="subscribe-form">
+                <input>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <p>
+                eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            </p>
+        </div>
+        <div class="footer__explore">
+            <h2>Explore</h2>
+            <table>
+                <tr>
+                    <td>Envato</td>
+                    <td>Themeforest</td>
+                </tr>
+                <tr>
+                    <td>Themecurve</td>
+                    <td>Microsoft</td>
+                </tr>
+                <tr>
+                    <td>Kreativeshowcase</td>
+                    <td>Google</td>
+                </tr>
+                <tr>
+                    <td>Freebiescurve</td>
+                    <td>Yahoo</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer__info">
+            <p class="footer__info-top">
+                Create with
+                <span>
+                <i class="fas fa-heart"></i>
+        </span>
+                by
+                <span>
+           the mecurve
+        </span>
+                exclusive for kreativeshowcase
+            </p>
+            <p class="footer__info-bottom">
+                © 2014 Brandi. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer >
+<div id="btnTotop" onclick="topFunc()">
+    <i class="fas fa-arrow-up"></i>
+</div>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.countup.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
-
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/carousel.js"></script>
+<!--    AOS lib-->
+<script src="./assets/js/filter.js"></script>
+<script src="./assets/js/main.js"></script>
+<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+<!--<script>-->
+<!--    AOS.init({-->
+<!--        duration: 1200,-->
+<!--        offet: 120,-->
+<!--        once: true,-->
+<!--    })-->
+<!--</script>-->
+<script>
+    $('.counter').countUp({
+        'time': 2000,
+        'delay': 10
+    });
+</script>
 </body>
 </html>
 
