@@ -18,6 +18,7 @@
       text-align: center;
       margin: 0 20%;
       color: #062033;
+      opacity: 0.8;
     }
   }
 
@@ -34,17 +35,18 @@
 
       h2 {
         font-size: 22px;
-        font-weight: 600;
+        font-weight: 500;
         color: #062033;
+        margin-bottom: 40px;
       }
 
       p {
         grid-column: 1/span 2;
         font-size: 13px;
-        width: 55%;
-        padding-top: 40px;
+        width: 80%;
         color: #6a737b;
         font-weight: 600;
+        line-height: 30px;
       }
     }
 
@@ -53,13 +55,15 @@
 
       h2 {
         font-size: 24px;
-        font-weight: 800;
+        font-weight: 600;
+        color: #062033;
+        margin-bottom: 30px;
       }
 
       form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 40px;
+
 
         input {
           border-bottom: 1px solid #c3c6c7;
@@ -76,9 +80,15 @@
             outline: none;
           }
         }
-        input:nth-child(3){
+
+        input:nth-child(1) {
+          margin-right: 30px;
+
+        }
+
+        input:nth-child(3) {
           grid-column: 1/span2;
-          margin-right: 40px;
+          margin-top: 30px;
         }
       }
 
@@ -91,9 +101,11 @@
           font-size: 16px;
           font-weight: 600;
           display: inline-block;
-          &:hover{
+
+          &:hover {
             color: #0eb493;
           }
+
           span {
             color: #0eb493;
             margin-right: 5px;
@@ -116,7 +128,8 @@
       .fab {
         margin-bottom: 20px;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
           font-weight: 800;
           color: #3c3c3c;
         }
@@ -186,12 +199,6 @@
       .letdiscuss__content--title {
         text-align: left;
         width: 80%;
-        //h2{
-        //  width: 75%;
-        //}
-        //p{
-        //
-        //}
       }
 
       .letdiscuss__content--form {

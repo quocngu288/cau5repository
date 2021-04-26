@@ -57,12 +57,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-    z-index: 10;
+    z-index: 1;
 
     .content-head {
       font-size: 62px;
       font-weight: 100;
-    white-space: nowrap;
+      white-space: nowrap;
       @media screen and (max-width: 560px) {
         font-size: 52px;
       }
@@ -81,10 +81,12 @@
       @media screen and (max-width: 560px) {
         font-size: 38px;
       }
+
       span {
         color: #FFFFFF;
       }
     }
+
     .content-foot {
       font-size: 18px;
       font-weight: 100;
@@ -92,7 +94,7 @@
       grid-template-columns: repeat(3, auto);
       justify-content: center;
       align-items: center;
-      grid-gap: 15px;
+      grid-gap: 30px;
       margin-top: 25px;
       @media screen and (max-width: 560px) {
         font-size: 13px;
@@ -100,7 +102,6 @@
 
       p {
         font-size: 18px;
-
       }
 
       .content-line {
@@ -119,7 +120,7 @@
     bottom: 50px;
     left: 50%;
     transform: translate(-50%);
-    z-index: 10;
+    z-index: 1;
 
     i {
       margin: 0 5px;
