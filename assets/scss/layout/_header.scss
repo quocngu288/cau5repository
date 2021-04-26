@@ -65,7 +65,6 @@ header {
       height: 70px;
 
       .nav-item {
-        
         .nav-links {
           position: relative;
           color: #fff;
@@ -107,7 +106,9 @@ header {
       }
 
       .nav-item:nth-child(5) {
-        padding: 0 0 0 13px;
+        .nav-links{
+          padding-right: 0;
+        }
       }
 
       .fa-times {

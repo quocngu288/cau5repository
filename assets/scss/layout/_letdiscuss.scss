@@ -37,13 +37,14 @@
         font-size: 22px;
         font-weight: 500;
         color: #062033;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        line-height: 35px;
       }
 
       p {
         grid-column: 1/span 2;
         font-size: 13px;
-        width: 80%;
+        width: 70%;
         color: #6a737b;
         font-weight: 600;
         line-height: 30px;
@@ -57,7 +58,8 @@
         font-size: 24px;
         font-weight: 600;
         color: #062033;
-        margin-bottom: 30px;
+        margin-bottom: 45px;
+        line-height: 35px;
       }
 
       form {
@@ -70,7 +72,7 @@
           border-top: none;
           border-left: none;
           border-right: none;
-          padding: 20px 0;
+          padding: 0 0 20px 0;
           max-width: 100%;
           font-size: 13px;
           color: #6a737b;
@@ -83,18 +85,23 @@
 
         input:nth-child(1) {
           margin-right: 30px;
-
+          @media screen and (max-width: 580px){
+            margin-right: 0px;
+          }
         }
 
         input:nth-child(3) {
           grid-column: 1/span2;
-          margin-top: 30px;
+          margin-top: 45px;
+          @media screen and (max-width: 580px){
+            margin-top: 0;
+          }
         }
       }
 
       .content--form__send {
         text-align: right;
-        margin-top: 40px;
+        margin-top: 32px;
         cursor: pointer;
 
         h2 {

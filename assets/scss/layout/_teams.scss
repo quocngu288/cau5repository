@@ -146,7 +146,7 @@
         display: inline-block;
         border-radius: 50%;
         border: 1px solid #c3c6c7;
-        margin-right: 10px;
+        margin-right: 15px;
 
         &:focus {
           outline: none;
@@ -155,6 +155,7 @@
 
       .owl-dot.active {
         background: #000000;
+        border: 1px solid #000;
       }
     }
   }
