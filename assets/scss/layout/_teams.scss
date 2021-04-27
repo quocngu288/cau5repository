@@ -3,23 +3,7 @@
   width: 100%;
 
   .teams__title {
-    margin: 0 0 110px 0;
 
-    h2 {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 800;
-      color: #0eb493;
-    }
-
-    p {
-      font-size: 18px;
-      font-weight: 600;
-      text-align: center;
-      margin: 0 20%;
-      color: #062033;
-      opacity: 0.8;
-    }
   }
 
   .teams__content {
@@ -28,11 +12,9 @@
     margin: 0 auto;
     text-align: center;
 
-
     .teams__content--item {
       .item--wrap {
         position: relative;
-
         .item__detail {
           position: absolute;
           top: 0;
@@ -41,47 +23,33 @@
           transition: all 0.5s;
           opacity: 0;
           text-align: center;
-          display: flex;
-          align-items: center;
+
+
 
           .wrap--content {
             padding: 20px 20px;
-
             h2 {
               font-weight: bolder;
               font-size: 16px;
               color: #FFFFFF;
-
             }
 
             p {
-              margin: 20px 0 70px 0;
+              margin: 20px 0 0 0;
               font-size: 16px;
               color: #FFFFFF;
-              @media screen and (max-width: 1110px) {
-                margin: 15px 0 30px 0;
-              }
-              @media screen and (max-width: 999px) {
-                margin: 20px 0 70px 0;
-              }
-              @media screen and (max-width: 874px) {
-                margin: 15px 0 30px 0;
-              }
-              @media screen and (max-width: 740px) {
-                margin: 20px 0 70px 0;
-              }
-              @media screen and (max-width: 546px) {
-                margin: 15px 0 30px 0;
-              }
-              @media screen and (max-width: 499px) {
-                margin: 20px 0 70px 0;
+              @media #{$info-phone-3}{
+               margin-top: 40px;
               }
             }
 
             .detail-social {
               display: flex;
               justify-content: center;
-
+              position: absolute;
+              bottom: 5%;
+              left: 50%;
+              transform: translateX(-50%);
               .fab {
                 background: rgba(18, 128, 106, 0.9);
                 color: #FFFFFF;
@@ -89,21 +57,18 @@
                 margin: 0 2px;
                 width: 40px;
               }
+              @media #{$info-phone-3} {
+                bottom: 30%;
+              }
             }
-            @media screen and (max-width: 1110px) {
-             padding: 15px 15px;
+            @media screen and (max-width: 738px){
+              padding: 40px 20px 20px 20px;
             }
-            @media screen and (max-width: 999px) {
-              padding: 20px 15px;
+            @media #{$info-phone-2} {
+              padding: 20px 30px;
             }
-            @media screen and (max-width: 874px) {
-              padding: 15px 10px;
-            }
-            @media screen and (max-width: 740px) {
-              padding: 20px 15px;
-            }
-            @media screen and (max-width: 499px) {
-              padding: 20px 20px;
+            @media #{$info-phone-3}{
+              padding: 80px 40px 20px 40px;
             }
           }
         }
@@ -116,7 +81,6 @@
           font-weight: bolder;
           color: #062033;
         }
-
         p {
           padding-top: 5px;
           font-size: 13px;
@@ -127,10 +91,12 @@
       &:hover .item--wrap .item__detail {
         opacity: 1;
       }
-      &:hover h2{
+
+      &:hover h2 {
         color: #0eb493;
       }
     }
+
     .owl-nav {
       display: none;
     }
@@ -140,7 +106,6 @@
       text-align: center;
 
       .owl-dot {
-        display: block;
         height: 8px;
         width: 8px;
         display: inline-block;
@@ -160,8 +125,6 @@
     }
   }
 
-  @media #{$info-phone} {
 
-  }
 
 }

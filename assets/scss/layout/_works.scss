@@ -3,23 +3,6 @@
 
   .works__title {
 
-    margin: 0 0 55px 0;
-
-    h2 {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 800;
-      color: #0eb493;
-    }
-
-    p {
-      font-size: 18px;
-      font-weight: 600;
-      text-align: center;
-      margin: 0 20%;
-      color: #062033;
-      opacity: 0.8;
-    }
   }
 
   .works__tab {
@@ -27,7 +10,6 @@
       display: flex;
       justify-content: center;
       list-style: none;
-
       margin: 0 auto 46px auto;
       //overflow: hidden;
 
@@ -44,39 +26,40 @@
           font-size: 14px;
           white-space: nowrap;
           cursor: pointer;
-          padding: 10px 20px;
+          padding: 6px 20px;
           &:focus, &:hover, &.active {
             color: #fff;
             font-weight: 700;
             background: #0eb493;
             border-radius: 10px;
           }
+          @media #{$info-phone-2} {
+            padding: 5px 10px;
+          }
+          @media screen and (max-width: 445px) {
+            padding: 3px 8px;
+          }
         }
-
-
         @media screen and (max-width: 990px) {
           padding: 10px 15px;
         }
-        @media screen and (max-width: 768px) {
+        @media #{$info-phone} {
           padding: 10px 5px;
         }
-        @media screen and (max-width: 576px) {
-          padding: 0px 3px;
+        @media #{$info-phone-2} {
+          padding: 0px 5px;
+          margin-right: 5px;
         }
-
+        @media screen and (max-width: 445px) {
+          padding: 0px;
+          margin-right: 0px;
+        }
 
       }
       .navtab-item:nth-child(5){
         margin-right: 0;
       }
 
-
-      //@media screen and (max-width: 768px) {
-      //  width: 70%;
-      //}
-      //@media screen and (max-width: 576px) {
-      //  width: 90%;
-      //}
     }
 
     .tab-content {
@@ -129,7 +112,7 @@
               @media screen and (max-width: 890px) {
                 font-size: 16px;
               }
-              @media screen and (max-width: 768px) {
+              @media #{$info-phone}{
                 font-size: 18px;
               }
             }
@@ -141,7 +124,7 @@
               @media screen and (max-width: 890px) {
                 font-size: 13px;
               }
-              @media screen and (max-width: 768px) {
+              @media #{$info-phone}{
                 font-size: 14px;
               }
             }
@@ -155,7 +138,7 @@
         }
       }
 
-      @media screen and (max-width: 768px) {
+      @media #{$info-phone} {
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -163,8 +146,6 @@
 
   }
 
-  @media #{$info-phone} {
 
-  }
 
 }

@@ -8,16 +8,15 @@
     background-position: center;
     background-size: cover;
     padding-top: 420px;
-    @media screen and (max-width: 768px) {
+    @media #{$info-phone}{
       padding-top: 380px;
     }
-    @media screen and (max-width: 560px) {
+    @media #{$info-phone-2} {
       padding-top: 250px;
       height: 600px;
     }
 
   }
-
   .owl-nav {
     display: none;
   }
@@ -37,7 +36,7 @@
       border-radius: 50%;
       border: 1px solid #c3c6c7;
       opacity: 0.3;
-      //margin-right: 4px;
+
 
       &:focus {
         outline: none;
@@ -60,12 +59,12 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 1;
-
+    color: #FFFFFF;
     .content-head {
       font-size: 62px;
       font-weight: 100;
       white-space: nowrap;
-      @media screen and (max-width: 560px) {
+      @media #{$info-phone-2} {
         font-size: 52px;
       }
 
@@ -80,7 +79,7 @@
       font-weight: 100;
       padding-top: 0;
       line-height: 45px;
-      @media screen and (max-width: 560px) {
+      @media #{$info-phone-2} {
         font-size: 38px;
       }
 
@@ -98,7 +97,7 @@
       align-items: center;
       grid-gap: 30px;
       margin-top: 25px;
-      @media screen and (max-width: 560px) {
+      @media #{$info-phone-2}{
         font-size: 13px;
       }
 
@@ -113,8 +112,6 @@
       }
     }
 
-
-    color: #FFFFFF;
   }
 
   .slider__icon {
@@ -128,7 +125,6 @@
       margin: 0 5px;
       color: rgba(255, 255, 255, 0.5);
       cursor: pointer;
-
       &:hover {
         color: rgba(255, 255, 255, 1);
       }

@@ -1,4 +1,4 @@
-.somefun {
+.some-fun {
   background-image: url("../img/somefun1.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -16,9 +16,8 @@
     background-color: rgba(16, 39, 56, 0.8);
   }
 
-  .somefun__title {
+  .some-fun__title {
     position: relative;
-
     h2 {
       text-align: center;
       font-size:28px;
@@ -35,25 +34,23 @@
     }
   }
 
-  .somefun__content {
+  .some-fun__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 110px;
-    //z-index: 9;
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 
     .content--item {
-      z-index: 9;
       text-align: center;
-
+      z-index: 9;
       .fas {
         color: #FFFFFF;
         padding: 40px;
         border: 1px solid #c3c6c7;
         border-radius: 50%;
-        font-size: 2rem;
+        font-size: 32px;
       }
 
       h2 {
@@ -69,34 +66,21 @@
         font-size: 18px;
         font-weight: 300;
         padding: 0;
+        white-space: nowrap;
       }
     }
-
-    @media screen and (max-width: 1078px) {
-      grid-gap: 90px;
-    }
-    @media screen and (max-width: 1003px) {
-      grid-gap: 60px;
-
-    }
-    @media screen and (max-width: 870px) {
-      grid-gap: 50px;
-
-    }
-    @media screen and (max-width: 770px) {
+    @media #{$info-phone}{
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 30px;
-      margin: 0 80px;
+      grid-gap: 20px;
     }
-    @media screen and (max-width: 550px) {
+    @media #{ $info-phone-2}{
       padding: 0;
     }
-    @media screen and (max-width: 400px) {
+    @media #{ $info-phone-4} {
       margin: 0;
     }
   }
-
-  @media screen and (max-width: 770px) {
+  @media #{$info-phone} {
     height: 800px;
   }
 

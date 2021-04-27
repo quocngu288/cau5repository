@@ -2,16 +2,14 @@
   background-color: #f4f7f9;
   height: 460px;
   width: 100%;
-
   .features__title {
-    margin-bottom: 70px;
-
-    h2 {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 800;
-      color: #0eb493;
-    }
+    //margin-bottom: 70px;
+    //h2 {
+    //  text-align: center;
+    //  font-size: 28px;
+    //  font-weight: 800;
+    //  color: #0eb493;
+    //}
   }
 
   .features__wrap {
@@ -33,7 +31,7 @@
           width: 40px;
           border-radius: 50%;
           color: #0eb493;
-          padding: 10px 10px 10px 10px;
+          padding: 10px;
         }
       }
 
@@ -60,7 +58,6 @@
       text-align: center;
 
       .owl-dot {
-        display: block;
         height: 8px;
         width: 8px;
         display: inline-block;
