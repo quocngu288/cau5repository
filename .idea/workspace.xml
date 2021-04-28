@@ -5,12 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/vendor/owl.carousel.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.countup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.countup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.waypoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vendor/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_features.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_let-discuss.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_let-discuss.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/layout/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_slider.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/layout/_some-fun.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_some-fun.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/layout/_teams.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_teams.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/layout/_works.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_works.scss" afterDir="false" />
@@ -188,7 +186,7 @@
       <workItem from="1619405686397" duration="22022000" />
       <workItem from="1619486831228" duration="11147000" />
       <workItem from="1619575745188" duration="3146000" />
-      <workItem from="1619585431868" duration="4648000" />
+      <workItem from="1619585431868" duration="9987000" />
     </task>
     <servers />
   </component>

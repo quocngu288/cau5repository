@@ -60,7 +60,7 @@
     transform: translate(-50%);
     z-index: 1;
     color: #FFFFFF;
-    .content-head {
+    .head {
       font-size: 62px;
       font-weight: 100;
       white-space: nowrap;
@@ -73,7 +73,7 @@
       }
     }
 
-    .content-note {
+    .note {
       color: #0eb493;
       font-size: 48px;
       font-weight: 100;
@@ -88,7 +88,7 @@
       }
     }
 
-    .content-foot {
+    .foot {
       font-size: 18px;
       font-weight: 100;
       display: grid;
@@ -105,7 +105,7 @@
         font-size: 18px;
       }
 
-      .content-line {
+      .foot__line {
         height: 1px;
         width: 30px;
         background-color: #0eb493;

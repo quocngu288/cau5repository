@@ -11,7 +11,7 @@
     padding: 0 15px;
     margin: 0 auto;
 
-    .let-discuss__content--title {
+    .content-title {
       grid-column: 1/span 3;
 
       h2 {
@@ -42,7 +42,7 @@
       }
     }
 
-    .let-discuss__content--form {
+    .content-form {
       grid-column: 4/span 8;
       h2 {
         font-size: 24px;
@@ -93,7 +93,7 @@
         }
       }
 
-      .content--form__send {
+      .content-form__send {
         text-align: right;
         margin-top: 32px;
         cursor: pointer;
@@ -121,7 +121,7 @@
       }
     }
 
-    .let-discuss__content--icon {
+    .content-icon {
       grid-column: 12;
       display: flex;
       flex-direction: column;
@@ -147,18 +147,18 @@
 
   @media #{$info-phone-3}  {
     .let-discuss__content {
-      .let-discuss__content--title {
+      .content-title {
         text-align: left;
         width: 80%;
       }
 
-      .let-discuss__content--form {
+      .content-form {
         grid-column: 1/span 12s;
         width: 80%;
 
       }
 
-      .let-discuss__content--icon {
+      .content-icon {
         display: none;
       }
     }

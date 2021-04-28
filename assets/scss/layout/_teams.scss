@@ -12,10 +12,10 @@
     margin: 0 auto;
     text-align: center;
 
-    .teams__content-item {
-      .item-wrap {
+    .content{
+      .item-content {
         position: relative;
-        .item__detail {
+        .item-content__detail {
           position: absolute;
           top: 0;
           height: 100%;
@@ -24,7 +24,7 @@
           opacity: 0;
           text-align: center;
 
-          .wrap-content {
+          .detail {
             padding: 20px 20px;
             h2 {
               font-weight: bolder;
@@ -41,7 +41,7 @@
               }
             }
 
-            .detail-social {
+            .detail__social {
               display: flex;
               justify-content: center;
               position: absolute;
@@ -86,7 +86,7 @@
         }
       }
 
-      &:hover .item-wrap .item__detail {
+      &:hover .item-content .item-content__detail {
         opacity: 1;
       }
 

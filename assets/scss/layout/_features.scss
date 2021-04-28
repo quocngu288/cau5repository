@@ -6,15 +6,15 @@
 
   }
 
-  .features__wrap {
+  .features__content {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 
-    .wrap-item {
+    .item-content {
       display: flex;
 
-      .item--list {
+      .item-content__list{
         margin: 0 15px;
 
         i {
@@ -29,7 +29,7 @@
         }
       }
 
-      .item--header {
+      .item-content__header {
         h2 {
           font-size: 20px;
           font-weight: bolder;

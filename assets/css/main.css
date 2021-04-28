@@ -5508,27 +5508,27 @@ header {
     transform: translate(-50%);
     z-index: 1;
     color: #FFFFFF; }
-    .slider .slider__content .content-head {
+    .slider .slider__content .head {
       font-size: 62px;
       font-weight: 100;
       white-space: nowrap; }
       @media only screen and (max-width: 560px) {
-        .slider .slider__content .content-head {
+        .slider .slider__content .head {
           font-size: 52px; } }
-      .slider .slider__content .content-head span {
+      .slider .slider__content .head span {
         font-weight: 500; }
-    .slider .slider__content .content-note {
+    .slider .slider__content .note {
       color: #0eb493;
       font-size: 48px;
       font-weight: 100;
       padding-top: 0;
       line-height: 45px; }
       @media only screen and (max-width: 560px) {
-        .slider .slider__content .content-note {
+        .slider .slider__content .note {
           font-size: 38px; } }
-      .slider .slider__content .content-note span {
+      .slider .slider__content .note span {
         color: #FFFFFF; }
-    .slider .slider__content .content-foot {
+    .slider .slider__content .foot {
       font-size: 18px;
       font-weight: 100;
       display: grid;
@@ -5538,11 +5538,11 @@ header {
       grid-gap: 30px;
       margin-top: 25px; }
       @media only screen and (max-width: 560px) {
-        .slider .slider__content .content-foot {
+        .slider .slider__content .foot {
           font-size: 13px; } }
-      .slider .slider__content .content-foot p {
+      .slider .slider__content .foot p {
         font-size: 18px; }
-      .slider .slider__content .content-foot .content-line {
+      .slider .slider__content .foot .foot__line {
         height: 1px;
         width: 30px;
         background-color: #0eb493; }
@@ -5586,14 +5586,14 @@ header {
     top: 50%;
     left: 50%; }
 
-.commont-title {
+.common-title {
   margin: 0 0 60px 0; }
-  .commont-title h2 {
+  .common-title h2 {
     text-align: center;
     font-size: 28px;
     font-weight: 800;
     color: #0eb493; }
-  .commont-title p {
+  .common-title p {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
@@ -5619,7 +5619,7 @@ header {
     font-size: 22px;
     font-weight: bold; }
 
-.wrap-common {
+.common-section {
   padding: 90px 0 90px 0; }
 
 .modal {
@@ -5657,15 +5657,15 @@ header {
   background-color: #f4f7f9;
   height: 460px;
   width: 100%; }
-  .features .features__wrap {
+  .features .features__content {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto; }
-    .features .features__wrap .wrap-item {
+    .features .features__content .item-content {
       display: flex; }
-      .features .features__wrap .wrap-item .item--list {
+      .features .features__content .item-content .item-content__list {
         margin: 0 15px; }
-        .features .features__wrap .wrap-item .item--list i {
+        .features .features__content .item-content .item-content__list i {
           display: inline-block;
           text-align: center;
           border: 1px solid #0eb493;
@@ -5674,28 +5674,28 @@ header {
           border-radius: 50%;
           color: #0eb493;
           padding: 10px; }
-      .features .features__wrap .wrap-item .item--header h2 {
+      .features .features__content .item-content .item-content__header h2 {
         font-size: 20px;
         font-weight: bolder; }
-      .features .features__wrap .wrap-item .item--header p {
+      .features .features__content .item-content .item-content__header p {
         margin: 20px 0;
         font-size: 13px;
         color: #062033; }
-    .features .features__wrap .owl-nav {
+    .features .features__content .owl-nav {
       display: none; }
-    .features .features__wrap .owl-dots {
+    .features .features__content .owl-dots {
       margin-top: 50px;
       text-align: center; }
-      .features .features__wrap .owl-dots .owl-dot {
+      .features .features__content .owl-dots .owl-dot {
         height: 8px;
         width: 8px;
         display: inline-block;
         border-radius: 50%;
         border: 1px solid #c3c6c7;
         margin-right: 15px; }
-        .features .features__wrap .owl-dots .owl-dot:focus {
+        .features .features__content .owl-dots .owl-dot:focus {
           outline: none; }
-      .features .features__wrap .owl-dots .owl-dot.active {
+      .features .features__content .owl-dots .owl-dot.active {
         background: #000000;
         border: 1px solid #000; }
 
@@ -5757,7 +5757,7 @@ header {
       .works .works__tab .tab-content .tab-content__item img {
         width: 100%;
         display: block; }
-      .works .works__tab .tab-content .tab-content__item .content-detail {
+      .works .works__tab .tab-content .tab-content__item .item__detail {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -5771,34 +5771,34 @@ header {
         transform: translateY(-50%);
         opacity: 0;
         transition: all 0.5s; }
-        .works .works__tab .tab-content .tab-content__item .content-detail .wrap-content .fas {
+        .works .works__tab .tab-content .tab-content__item .item__detail .item__detail-content .fas {
           padding: 10px;
           text-align: center;
           border: 1px solid #fff;
           border-radius: 50%;
           color: #FFFFFF;
           margin-bottom: 20px; }
-        .works .works__tab .tab-content .tab-content__item .content-detail .wrap-content h2 {
+        .works .works__tab .tab-content .tab-content__item .item__detail .item__detail-content h2 {
           font-size: 18px;
           color: #FFFFFF;
           font-weight: bolder; }
           @media screen and (max-width: 890px) {
-            .works .works__tab .tab-content .tab-content__item .content-detail .wrap-content h2 {
+            .works .works__tab .tab-content .tab-content__item .item__detail .item__detail-content h2 {
               font-size: 16px; } }
           @media only screen and (max-width: 767px) {
-            .works .works__tab .tab-content .tab-content__item .content-detail .wrap-content h2 {
+            .works .works__tab .tab-content .tab-content__item .item__detail .item__detail-content h2 {
               font-size: 18px; } }
-        .works .works__tab .tab-content .tab-content__item .content-detail .wrap-content p {
+        .works .works__tab .tab-content .tab-content__item .item__detail .item__detail-content p {
           color: #FFFFFF;
           font-size: 14px;
           padding: 5px; }
           @media screen and (max-width: 890px) {
-            .works .works__tab .tab-content .tab-content__item .content-detail .wrap-content p {
+            .works .works__tab .tab-content .tab-content__item .item__detail .item__detail-content p {
               font-size: 13px; } }
           @media only screen and (max-width: 767px) {
-            .works .works__tab .tab-content .tab-content__item .content-detail .wrap-content p {
+            .works .works__tab .tab-content .tab-content__item .item__detail .item__detail-content p {
               font-size: 14px; } }
-      .works .works__tab .tab-content .tab-content__item:hover .content-detail {
+      .works .works__tab .tab-content .tab-content__item:hover .item__detail {
         opacity: 1; }
     @media only screen and (max-width: 767px) {
       .works .works__tab .tab-content {
@@ -5811,9 +5811,9 @@ header {
     padding: 0 15px;
     margin: 0 auto;
     text-align: center; }
-    .teams .teams__content .teams__content-item .item-wrap {
+    .teams .teams__content .content .item-content {
       position: relative; }
-      .teams .teams__content .teams__content-item .item-wrap .item__detail {
+      .teams .teams__content .content .item-content .item-content__detail {
         position: absolute;
         top: 0;
         height: 100%;
@@ -5821,56 +5821,56 @@ header {
         transition: all 0.5s;
         opacity: 0;
         text-align: center; }
-        .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content {
+        .teams .teams__content .content .item-content .item-content__detail .detail {
           padding: 20px 20px; }
-          .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content h2 {
+          .teams .teams__content .content .item-content .item-content__detail .detail h2 {
             font-weight: bolder;
             font-size: 16px;
             color: #FFFFFF; }
-          .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content p {
+          .teams .teams__content .content .item-content .item-content__detail .detail p {
             margin: 20px 0 0 0;
             font-size: 16px;
             color: #FFFFFF; }
             @media only screen and (max-width: 499px) {
-              .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content p {
+              .teams .teams__content .content .item-content .item-content__detail .detail p {
                 margin-top: 40px; } }
-          .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content .detail-social {
+          .teams .teams__content .content .item-content .item-content__detail .detail .detail__social {
             display: flex;
             justify-content: center;
             position: absolute;
             bottom: 5%;
             left: 50%;
             transform: translateX(-50%); }
-            .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content .detail-social .fab {
+            .teams .teams__content .content .item-content .item-content__detail .detail .detail__social .fab {
               background: rgba(18, 128, 106, 0.9);
               color: #FFFFFF;
               line-height: 40px;
               margin: 0 2px;
               width: 40px; }
             @media only screen and (max-width: 499px) {
-              .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content .detail-social {
+              .teams .teams__content .content .item-content .item-content__detail .detail .detail__social {
                 bottom: 30%; } }
           @media screen and (max-width: 738px) {
-            .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content {
+            .teams .teams__content .content .item-content .item-content__detail .detail {
               padding: 40px 20px 20px 20px; } }
           @media only screen and (max-width: 560px) {
-            .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content {
+            .teams .teams__content .content .item-content .item-content__detail .detail {
               padding: 20px 30px; } }
           @media only screen and (max-width: 499px) {
-            .teams .teams__content .teams__content-item .item-wrap .item__detail .wrap-content {
+            .teams .teams__content .content .item-content .item-content__detail .detail {
               padding: 80px 40px 20px 40px; } }
-    .teams .teams__content .teams__content-item .item__title h2 {
+    .teams .teams__content .content .item__title h2 {
       margin-top: 20px;
       font-size: 18px;
       font-weight: bolder;
       color: #062033; }
-    .teams .teams__content .teams__content-item .item__title p {
+    .teams .teams__content .content .item__title p {
       padding-top: 5px;
       font-size: 13px;
       color: #062033; }
-    .teams .teams__content .teams__content-item:hover .item-wrap .item__detail {
+    .teams .teams__content .content:hover .item-content .item-content__detail {
       opacity: 1; }
-    .teams .teams__content .teams__content-item:hover h2 {
+    .teams .teams__content .content:hover h2 {
       color: #0eb493; }
     .teams .teams__content .owl-nav {
       display: none; }
@@ -5970,15 +5970,15 @@ header {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto; }
-    .let-discuss .let-discuss__content .let-discuss__content--title {
+    .let-discuss .let-discuss__content .content-title {
       grid-column: 1/span 3; }
-      .let-discuss .let-discuss__content .let-discuss__content--title h2 {
+      .let-discuss .let-discuss__content .content-title h2 {
         font-size: 22px;
         font-weight: 500;
         color: #062033;
         margin-bottom: 30px;
         line-height: 35px; }
-      .let-discuss .let-discuss__content .let-discuss__content--title p {
+      .let-discuss .let-discuss__content .content-title p {
         grid-column: 1/span 2;
         font-size: 13px;
         width: 70%;
@@ -5986,27 +5986,27 @@ header {
         font-weight: 600;
         line-height: 30px; }
         @media only screen and (max-width: 900px) {
-          .let-discuss .let-discuss__content .let-discuss__content--title p {
+          .let-discuss .let-discuss__content .content-title p {
             grid-column: 1/span 12;
             width: 100%;
             padding-top: 20px;
             padding-bottom: 20px; } }
       @media only screen and (max-width: 900px) {
-        .let-discuss .let-discuss__content .let-discuss__content--title {
+        .let-discuss .let-discuss__content .content-title {
           grid-column: 1/span 12;
           text-align: right; } }
-    .let-discuss .let-discuss__content .let-discuss__content--form {
+    .let-discuss .let-discuss__content .content-form {
       grid-column: 4/span 8; }
-      .let-discuss .let-discuss__content .let-discuss__content--form h2 {
+      .let-discuss .let-discuss__content .content-form h2 {
         font-size: 24px;
         font-weight: 600;
         color: #062033;
         margin-bottom: 45px;
         line-height: 35px; }
-      .let-discuss .let-discuss__content .let-discuss__content--form form {
+      .let-discuss .let-discuss__content .content-form form {
         display: grid;
         grid-template-columns: repeat(2, 1fr); }
-        .let-discuss .let-discuss__content .let-discuss__content--form form input {
+        .let-discuss .let-discuss__content .content-form form input {
           border-bottom: 1px solid #c3c6c7;
           border-top: none;
           border-left: none;
@@ -6016,44 +6016,44 @@ header {
           font-size: 13px;
           color: #6a737b;
           font-weight: 600; }
-          .let-discuss .let-discuss__content .let-discuss__content--form form input:focus {
+          .let-discuss .let-discuss__content .content-form form input:focus {
             outline: none; }
-        .let-discuss .let-discuss__content .let-discuss__content--form form input:nth-child(1) {
+        .let-discuss .let-discuss__content .content-form form input:nth-child(1) {
           margin-right: 30px; }
           @media only screen and (max-width: 560px) {
-            .let-discuss .let-discuss__content .let-discuss__content--form form input:nth-child(1) {
+            .let-discuss .let-discuss__content .content-form form input:nth-child(1) {
               margin-right: 0px; } }
-        .let-discuss .let-discuss__content .let-discuss__content--form form input:nth-child(3) {
+        .let-discuss .let-discuss__content .content-form form input:nth-child(3) {
           grid-column: 1/span2;
           margin-top: 45px; }
           @media only screen and (max-width: 560px) {
-            .let-discuss .let-discuss__content .let-discuss__content--form form input:nth-child(3) {
+            .let-discuss .let-discuss__content .content-form form input:nth-child(3) {
               margin-top: 0; } }
         @media only screen and (max-width: 560px) {
-          .let-discuss .let-discuss__content .let-discuss__content--form form {
+          .let-discuss .let-discuss__content .content-form form {
             display: grid;
             grid-template-columns: none;
             grid-gap: 20px; } }
-      .let-discuss .let-discuss__content .let-discuss__content--form .content--form__send {
+      .let-discuss .let-discuss__content .content-form .content-form__send {
         text-align: right;
         margin-top: 32px;
         cursor: pointer; }
-        .let-discuss .let-discuss__content .let-discuss__content--form .content--form__send h2 {
+        .let-discuss .let-discuss__content .content-form .content-form__send h2 {
           font-size: 16px;
           font-weight: 600;
           display: inline-block; }
-          .let-discuss .let-discuss__content .let-discuss__content--form .content--form__send h2:hover {
+          .let-discuss .let-discuss__content .content-form .content-form__send h2:hover {
             color: #0eb493; }
-          .let-discuss .let-discuss__content .let-discuss__content--form .content--form__send h2 span {
+          .let-discuss .let-discuss__content .content-form .content-form__send h2 span {
             color: #0eb493;
             margin-right: 5px; }
         @media only screen and (max-width: 560px) {
-          .let-discuss .let-discuss__content .let-discuss__content--form .content--form__send {
+          .let-discuss .let-discuss__content .content-form .content-form__send {
             text-align: left; } }
       @media only screen and (max-width: 900px) {
-        .let-discuss .let-discuss__content .let-discuss__content--form {
+        .let-discuss .let-discuss__content .content-form {
           grid-column: 1/span 11; } }
-    .let-discuss .let-discuss__content .let-discuss__content--icon {
+    .let-discuss .let-discuss__content .content-icon {
       grid-column: 12;
       display: flex;
       flex-direction: column;
@@ -6062,20 +6062,20 @@ header {
       color: #cdd2d6;
       font-size: 20px;
       font-weight: 600; }
-      .let-discuss .let-discuss__content .let-discuss__content--icon .fab {
+      .let-discuss .let-discuss__content .content-icon .fab {
         margin-bottom: 20px;
         cursor: pointer; }
-        .let-discuss .let-discuss__content .let-discuss__content--icon .fab:hover {
+        .let-discuss .let-discuss__content .content-icon .fab:hover {
           font-weight: 800;
           color: #3c3c3c; }
   @media only screen and (max-width: 499px) {
-    .let-discuss .let-discuss__content .let-discuss__content--title {
+    .let-discuss .let-discuss__content .content-title {
       text-align: left;
       width: 80%; }
-    .let-discuss .let-discuss__content .let-discuss__content--form {
+    .let-discuss .let-discuss__content .content-form {
       grid-column: 1/span 12s;
       width: 80%; }
-    .let-discuss .let-discuss__content .let-discuss__content--icon {
+    .let-discuss .let-discuss__content .content-icon {
       display: none; } }
 
 .map {
