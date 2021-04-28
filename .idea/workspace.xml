@@ -3,22 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="705108df-46ae-46a6-8e75-5f1563e197a7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/helpers/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/helpers/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_features.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_letdiscuss.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_let-discuss.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_map.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_sidebar.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/layout/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_somefun.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_some-fun.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_teams.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_teams.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_works.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_works.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +173,8 @@
       <workItem from="1618830109735" duration="1359000" />
       <workItem from="1619147805547" duration="18690000" />
       <workItem from="1619405686397" duration="22022000" />
-      <workItem from="1619486831228" duration="10764000" />
+      <workItem from="1619486831228" duration="11147000" />
+      <workItem from="1619575745188" duration="90000" />
     </task>
     <servers />
   </component>

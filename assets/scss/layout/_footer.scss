@@ -3,7 +3,6 @@ footer {
   width: 100%;
   background-color: #0eb493;
   color: #FFFFFF;
-
   border-top: 5px solid #000;
   position: relative;
 
@@ -120,9 +119,6 @@ footer {
             @media screen and (max-width: 1080px) {
               padding-right: 10px;
             }
-            //  @media screen and (max-width: 858px) {
-            //  padding-right: 10px;
-            //}
             @media #{$info-phone-1}{
               padding-right: 60px
             }
