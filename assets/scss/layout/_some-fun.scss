@@ -42,7 +42,7 @@
     padding: 0 15px;
     margin: 0 auto;
 
-    .content--item {
+    .content-item {
       text-align: center;
       z-index: 9;
       .fas {
@@ -67,6 +67,7 @@
         font-weight: 300;
         padding: 0;
         white-space: nowrap;
+        opacity: 0.8;
       }
     }
     @media #{$info-phone}{

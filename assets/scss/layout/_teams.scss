@@ -12,8 +12,8 @@
     margin: 0 auto;
     text-align: center;
 
-    .teams__content--item {
-      .item--wrap {
+    .teams__content-item {
+      .item-wrap {
         position: relative;
         .item__detail {
           position: absolute;
@@ -24,9 +24,7 @@
           opacity: 0;
           text-align: center;
 
-
-
-          .wrap--content {
+          .wrap-content {
             padding: 20px 20px;
             h2 {
               font-weight: bolder;
@@ -88,7 +86,7 @@
         }
       }
 
-      &:hover .item--wrap .item__detail {
+      &:hover .item-wrap .item__detail {
         opacity: 1;
       }
 

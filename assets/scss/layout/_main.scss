@@ -26,9 +26,9 @@
     width: 90px;
     height: 1px;
     background: #dce1e5;
-    transform: translate(-15%,-50%);
+    transform: translate(50%,-50%);
     top: 50%;
-    left: 52%;
+    left: 50%;
   }
 
 }
@@ -70,7 +70,7 @@
     font-weight: bold;
   }
 }
-.wrap--container{
+.wrap-common{
   padding: 90px 0 90px 0;
 }
 .modal {

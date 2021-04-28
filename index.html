@@ -14,19 +14,25 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
+    <!-- google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-<!--    AOS lib-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--carousel-->
+    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
+    <!-- end carousel-->
+
+    <!--main-->
     <link rel="stylesheet" href="assets/css/main.css">
+    <!--end main-->
 </head>
 <body>
 
+<!--HEADER-->
 <header>
     <div class="navbar">
         <div class="navbar__left">
@@ -64,9 +70,11 @@
 
     </div>
 </header>
+<!--END HEADER-->
 
+<!--SLIDER-->
 <section id="home" class="slider">
-    <div class="owl-carousel owl-caro1">
+    <div class="owl-carousel owl-caro-slider">
         <div class="slider__item item" style="background-image: url('./assets/img/headerimg.png')">
         </div>
         <div class="slider__item item" style="background-image: url('./assets/img/headerimg1.png')">
@@ -91,17 +99,19 @@
         <i class="fab fa-dribbble"></i>
     </div>
 </section>
-<section id="feature" class="features wrap--container">
+<!--END SLIDER-->
+
+<!--FEATURE-->
+<section id="feature" class="features wrap-common">
     <div class="features__title commont-title">
         <h2>FEATURES</h2>
         <div class="line-title">
-            <span class="line-title--line"></span>
-            <!--            <i class="fas fa-heart"></i>-->
+
             <img src="assets/img/hear.png">
-            <span class="line-title--line"></span>
+
         </div>
     </div>
-    <div class="features__wrap owl-carousel owl-caro2">
+    <div class="features__wrap owl-carousel owl-caro-feature">
         <div class="wrap-item item">
             <div class="item--list">
                 <i class="fas fa-feather"></i>
@@ -188,13 +198,14 @@
         </div>
     </div>
 </section>
+<!--END FEATURE-->
+
+<!--WORK-->
 <section id="work" class="works">
     <div class="works__title commont-title">
         <h2>WORKS</h2>
         <div class="line-title">
-            <span class="line-title--line"></span>
             <img src="assets/img/hear.png" alt="hear.png">
-            <span class="line-title--line"></span>
         </div>
         <p>
             Owl Carousel 2.x.x is not compatibile with previous version 1.x.x. The idea stays the same and it has a lot
@@ -204,35 +215,35 @@
     <div class="works__tab">
         <ul class="navtab" id="myBtnContainer">
             <li class="navtab-item">
-                <a class="navtab--links active" onclick="filterSelection('all')">All</a>
+                <a class="navtab-links active" onclick="filterSelection('all')">All</a>
             </li>
             <li class="navtab-item">
-                <a class="navtab--links" onclick="filterSelection('branding')">Branding</a>
+                <a class="navtab-links" onclick="filterSelection('branding')">Branding</a>
             </li>
             <li class="navtab-item">
-                <a class="navtab--links" onclick="filterSelection('web')">Web</a>
+                <a class="navtab-links" onclick="filterSelection('web')">Web</a>
             </li>
             <li class="navtab-item">
-                <a class="navtab--links" onclick="filterSelection('logodesign')">Logo Design</a>
+                <a class="navtab-links" onclick="filterSelection('logodesign')">Logo Design</a>
             </li>
             <li class="navtab-item">
-                <a class="navtab--links" onclick="filterSelection('photography')">Photography</a>
+                <a class="navtab-links" onclick="filterSelection('photography')">Photography</a>
             </li>
         </ul>
         <div class="tab-content">
             <div class="tab-content__item branding">
                 <img src="./assets/img/item1.png" alt="item1.png">
-                <div class="content--detail">
-                     <div class="wrap-content">
-                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
-                         <h2>Labore et dolore magnam </h2>
-                         <p>Photography</p>
-                     </div>
+                <div class="content-detail">
+                    <div class="wrap-content">
+                        <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
+                        <h2>Labore et dolore magnam </h2>
+                        <p>Photography</p>
+                    </div>
                 </div>
             </div>
             <div class="tab-content__item web">
                 <img src="./assets/img/item2.png" alt="item2.png">
-                <div class="content--detail">
+                <div class="content-detail">
                     <div class="wrap-content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
@@ -242,7 +253,7 @@
             </div>
             <div class="tab-content__item branding">
                 <img src="./assets/img/item3.png" alt="item3.png">
-                <div class="content--detail">
+                <div class="content-detail">
 
                     <div class="wrap-content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
@@ -251,9 +262,9 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-content__item photography" >
+            <div class="tab-content__item photography">
                 <img src="./assets/img/item4.png" alt="item4.png">
-                <div class="content--detail">
+                <div class="content-detail">
 
                     <div class="wrap-content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
@@ -264,7 +275,7 @@
             </div>
             <div class="tab-content__item photography">
                 <img src="./assets/img/item5.png" alt="item5.png">
-                <div class="content--detail">
+                <div class="content-detail">
                     <div class="wrap-content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
@@ -274,7 +285,7 @@
             </div>
             <div class="tab-content__item web">
                 <img src="./assets/img/item6.png" alt="item6.png">
-                <div class="content--detail">
+                <div class="content-detail">
                     <div class="wrap-content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
@@ -284,7 +295,7 @@
             </div>
             <div class="tab-content__item branding">
                 <img src="./assets/img/item7.png" alt="item7.png">
-                <div class="content--detail">
+                <div class="content-detail">
                     <div class="wrap-content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
@@ -294,7 +305,7 @@
             </div>
             <div class="tab-content__item logodesign">
                 <img src="./assets/img/item8.png" alt="item8.png">
-                <div class="content--detail">
+                <div class="content-detail">
                     <div class="wrap-content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
@@ -306,40 +317,40 @@
 
     </div>
 </section>
+<!--END WORK-->
 
-<section id="team" class="teams wrap--container">
+<!--TEAM-->
+<section id="team" class="teams wrap-common">
     <div class="teams__title commont-title">
         <h2>MEET OUR TEAM </h2>
         <div class="line-title">
-            <span class="line-title--line"></span>
             <img src="assets/img/hear.png" alt="hear.png">
-            <span class="line-title--line"></span>
         </div>
         <p>
             Owl Carousel 2.x.x is not compatibile with previous version 1.x.x. The idea stays the same and it has a lot
             and it has a lot
         </p>
     </div>
-    <div class="teams__content owl-carousel owl-caro3">
-        <div class="teams__content--item item">
-            <div class="item--wrap">
+    <div class="teams__content owl-carousel owl-caro-team">
+        <div class="teams__content-item item">
+            <div class="item-wrap">
                 <img src="assets/img/team1.png" alt="item1.png"/>
                 <div class="item__detail">
-                 <div class="wrap--content">
-                     <h2>
-                         Nemo enim ipsam
-                         voluptatem quia
-                     </h2>
-                     <p>
-                         sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                         ratione voluptatem.voluptatem.
-                     </p>
-                     <div class="detail-social">
-                         <i class="fab fa-twitter"></i>
-                         <i class="fab fa-facebook-f"></i>
-                         <i class="fab fa-google-plus-g"></i>
-                     </div>
-                 </div>
+                    <div class="wrap-content">
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail-social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item__title">
@@ -347,11 +358,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="teams__content--item item">
-            <div class="item--wrap">
+        <div class="teams__content-item item">
+            <div class="item-wrap">
                 <img src="assets/img/team2.png" alt="item2.png"/>
                 <div class="item__detail">
-                    <div class="wrap--content">
+                    <div class="wrap-content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -373,11 +384,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="teams__content--item item">
-            <div class="item--wrap">
+        <div class="teams__content-item item">
+            <div class="item-wrap">
                 <img src="assets/img/team3.png" alt="item3.png"/>
                 <div class="item__detail">
-                    <div class="wrap--content">
+                    <div class="wrap-content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -399,11 +410,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="teams__content--item item">
-            <div class="item--wrap">
+        <div class="teams__content-item item">
+            <div class="item-wrap">
                 <img src="assets/img/team4.png" alt="item4.png"/>
                 <div class="item__detail">
-                    <div class="wrap--content">
+                    <div class="wrap-content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -425,9 +436,9 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="teams__content--item item">
-            <div class="item--wrap">
-                <img src="assets/img/team1.png"/>
+        <div class="teams__content-item item">
+            <div class="item-wrap">
+                <img src="assets/img/team1.png" alt="team1"/>
                 <div class="item__detail">
                     <h2>
                         Nemo enim ipsam
@@ -449,11 +460,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="teams__content--item item">
-            <div class="item--wrap">
-                <img src="assets/img/team2.png"/>
+        <div class="teams__content-item item">
+            <div class="item-wrap">
+                <img src="assets/img/team2.png" alt=" team 2"/>
                 <div class="item__detail">
-                    <div class="wrap--content">
+                    <div class="wrap-content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -475,11 +486,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="teams__content--item item">
-            <div class="item--wrap">
-                <img src="assets/img/team3.png"/>
+        <div class="teams__content-item item">
+            <div class="item-wrap">
+                <img src="assets/img/team3.png" alt="team-3"/>
                 <div class="item__detail">
-                    <div class="wrap--content">
+                    <div class="wrap-content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -501,11 +512,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="teams__content--item item">
-            <div class="item--wrap">
-                <img src="assets/img/team4.png"/>
+        <div class="teams__content-item item">
+            <div class="item-wrap">
+                <img src="assets/img/team4.png" alt="team4"/>
                 <div class="item__detail">
-                    <div class="wrap--content">
+                    <div class="wrap-content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -527,11 +538,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="teams__content--item item">
-            <div class="item--wrap">
-                <img src="assets/img/team1.png"/>
+        <div class="teams__content-item item">
+            <div class="item-wrap">
+                <img src="assets/img/team1.png" alt="team1"/>
                 <div class="item__detail">
-                    <div class="wrap--content">
+                    <div class="wrap-content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -555,32 +566,33 @@
         </div>
     </div>
 </section>
-<section  class="some-fun wrap--container">
+<!--END TEAM-->
+
+<!--SOME-FUN-->
+<section class="some-fun wrap-common">
     <div class="some-fun__title commont-title">
         <h2>SOME FUN FACTS</h2>
         <div class="line-title">
-            <span class="line-title--line"></span>
             <img src="assets/img/hear1.png" alt="hear.png">
-            <span class="line-title--line"></span>
         </div>
     </div>
     <div class="some-fun__content">
-        <div class="content--item">
+        <div class="content-item">
             <i class="fas fa-clock"></i>
             <h2 class="counter">3200</h2>
             <p>HOUR OF WORK</p>
         </div>
-        <div class="content--item">
+        <div class="content-item">
             <i class="fas fa-user-friends"></i>
             <h2 class="counter">120</h2>
             <p>SATIFIED CLINED</p>
         </div>
-        <div class="content--item">
+        <div class="content-item">
             <i class="fas fa-rocket"></i>
             <h2 class="counter">360</h2>
             <p>PRIJECT DELIVERED</p>
         </div>
-        <div class="content--item">
+        <div class="content-item">
             <i class="fas fa-trophy"></i>
             <h2 class="counter">42</h2>
             <p>AWARD WON</p>
@@ -588,13 +600,14 @@
 
     </div>
 </section>
-<section class="let-discuss wrap--container">
+<!--END SOME-FUN-->
+
+<!--LET-DISSCUT-->
+<section class="let-discuss wrap-common">
     <div class="let-discuss__title commont-title">
         <h2>LET'S DISCUSS</h2>
         <div class="line-title">
-            <span class="line-title--line"></span>
             <img src="assets/img/hear.png" alt="hear.png">
-            <span class="line-title--line"></span>
         </div>
         <p>
             Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
@@ -632,10 +645,13 @@
         </div>
     </div>
 </section>
+<!--END LET-DISSCUT-->
 <section class="map">
     <!------------------------>
-</section >
-<footer class="wrap--container" id="contact">
+</section>
+
+<!--FOOTER-->
+<footer class="wrap-common" id="contact">
     <div class="footer__content">
         <div class="footer__brandi">
             <h2>Brandi</h2>
@@ -692,28 +708,43 @@
             </p>
         </div>
     </div>
-</footer >
+</footer>
+<!--END FOOTER-->
+
+<!--MODAL-->
 <div id="myModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="img01" alt="item">
     <div id="caption"></div>
 </div>
+<!--END MODAL-->
+
+<!--BTN TO TOP-->
 <div id="btnTotop" onclick="topFunc()">
     <i class="fas fa-arrow-up"></i>
 </div>
+<!--END-->
+
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-<script src="assets/js/jquery.waypoints.min.js"></script>
-<script src="assets/js/jquery.countup.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="./assets/js/owl.carousel.min.js"></script>
 
-<script src="./assets/js/main.js"></script>
+<!--count-->
+<script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+<script src="assets/js/vendor/jquery.countup.min.js"></script>
+<!--end-count-->
 
+<!--carousel-->
+<script src="assets/js/vendor/owl.carousel.min.js"></script>
+<!--end carousel-->
+
+<!--main-->
+<script src="assets/js/main.js"></script>
+<!--end main-->
 
 </body>
 </html>

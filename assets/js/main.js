@@ -33,7 +33,6 @@ function closeModal() {
     // var span = document.getElementsByClassName("close")[0];
     modal.style.display = "none"
 }
-
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none"
@@ -67,9 +66,9 @@ $('.counter').countUp({
     'delay': 10
 });
 //---------------------------------------------------------------------------------------------
-var owl1 = $('.owl-caro1');
-var owl2 = $('.owl-caro2');
-var owl3 = $('.owl-caro3');
+var owl1 = $('.owl-caro-slider');
+var owl2 = $('.owl-caro-feature');
+var owl3 = $('.owl-caro-team');
 owl1.owlCarousel({
     loop: true,
     margin: 0,
