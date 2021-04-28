@@ -17,9 +17,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
     height: 70px;
 
     &:before, &:after {
@@ -35,9 +32,10 @@ header {
       .navbar-brandi {
         font-family: 'Pacifico', cursive;
         font-size: 28px;
-        color: #fff;
-        cursor: pointer;
         line-height: 1;
+        a{
+          color: #fff;
+        }
       }
 
       .navbar-text {
@@ -112,11 +110,13 @@ header {
         }
       }
 
-      .fa-times {
-        color: #fff;
-        font-size: 25px;
-        cursor: pointer;
+      .nav-item:nth-child(6) {
         visibility: hidden;
+        .fa-times{
+          color: #fff;
+          font-size: 25px;
+          cursor: pointer;
+        }
       }
 
       @media #{$info-tablet-vertical}  {
@@ -133,7 +133,7 @@ header {
         transform: translateX(-300px);
         transition: 0.5s all;
 
-        .fa-times {
+        .nav-item:nth-child(6){
           position: absolute;
           right: 5%;
           top: 2%;
@@ -162,9 +162,9 @@ header {
       .navbar__hamburger {
         visibility: visible;
       }
-      .fa-times {
-        visibility: visible;
-      }
+      //.fa-times {
+      //  visibility: visible;
+      //}
     }
   }
 

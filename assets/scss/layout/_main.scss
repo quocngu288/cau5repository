@@ -1,4 +1,4 @@
-.line-title {
+.common-line {
   width: 100%;
   position: relative;
   z-index: 1;
@@ -72,6 +72,11 @@
 }
 .common-section{
   padding: 90px 0 90px 0;
+}
+.common-container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .modal {
   display: none; /* Hidden by default */

@@ -7,9 +7,6 @@ footer {
   position: relative;
 
   .footer__content {
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 30px;
@@ -56,7 +53,7 @@ footer {
         padding-top: 14px;
       }
 
-      .subscribe-form {
+      .subscribe__form {
         border: 2px solid #fff;
         border-radius: 2px;
         margin-bottom: 20px;
@@ -144,7 +141,7 @@ footer {
     .footer__info {
       grid-column: 10/span 3;
 
-      .footer__info-top {
+      .info__top {
         font-size: 13px;
         color: #FFFFFF;
         margin-top: 65px;
@@ -174,7 +171,7 @@ footer {
         }
       }
 
-      .footer__info-bottom {
+      .info__bottom {
         padding-top: 60px;
         color: #062033;
         font-weight: 600;

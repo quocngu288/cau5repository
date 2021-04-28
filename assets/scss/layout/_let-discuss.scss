@@ -7,13 +7,9 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 40px;
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
 
     .content-title {
       grid-column: 1/span 3;
-
       h2 {
         font-size: 22px;
         font-weight: 500;

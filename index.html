@@ -34,9 +34,9 @@
 
 <!--HEADER-->
 <header>
-    <div class="navbar">
+    <div class="navbar common-container">
         <div class="navbar__left">
-            <div class="navbar-brandi">Brandi</div>
+            <h1 class="navbar-brandi"><a href="">Brandi</a></h1>
             <div class="navbar-text">
                 I'am your tag line
             </div>
@@ -62,7 +62,7 @@
 
                 <a class="nav-links" href="#contact">Contact</a>
             </li>
-            <i class="fas fa-times" onclick="handleClickCloseSidebar()"></i>
+            <li class="nav-item"><i class="fas fa-times" onclick="handleClickCloseSidebar()"></i></li>
         </ul>
         <div class="navbar__hamburger" onclick="handleClickOpenSidebar()">
             <i class="fas fa-bars"></i>
@@ -84,13 +84,13 @@
     </div>
 
     <div class="slider__content">
-        <p class="head">Meet <span>Brandi</span>!</p>
-        <p class="note">/created <span>one page template</span></p>
-        <div class="foot">
-            <span class="foot__line"></span>
-            <p>We are team of professionals</p>
-            <span class="foot__line"></span>
-        </div>
+        <p>Meet <span>Brandi</span>!</p>
+        <p>/created <span>one page template</span></p>
+        <p>
+            <span>We are team of professionals</span>
+        </p>
+
+
     </div>
     <div class="slider__icon">
         <i class="fab fa-twitter"></i>
@@ -105,13 +105,13 @@
 <section id="feature" class="features common-section">
     <div class="features__title common-title">
         <h2>FEATURES</h2>
-        <div class="line-title">
+        <div class="common-line">
 
             <img src="assets/img/hear.png">
 
         </div>
     </div>
-    <div class="features__content owl-carousel owl-caro-feature">
+    <div class="features__content common-container owl-carousel owl-caro-feature">
         <div class="item-content item">
             <div class="item-content__list">
                 <i class="fas fa-feather"></i>
@@ -204,7 +204,7 @@
 <section id="work" class="works">
     <div class="works__title common-title">
         <h2>WORKS</h2>
-        <div class="line-title">
+        <div class="common-line">
             <img src="assets/img/hear.png" alt="hear.png">
         </div>
         <p>
@@ -213,7 +213,7 @@
         </p>
     </div>
     <div class="works__tab">
-        <ul class="navtab" id="myBtnContainer">
+        <ul class="navtab">
             <li class="navtab-item">
                 <a class="navtab-links active" onclick="filterSelection('all')">All</a>
             </li>
@@ -323,7 +323,7 @@
 <section id="team" class="teams common-section">
     <div class="teams__title common-title">
         <h2>MEET OUR TEAM </h2>
-        <div class="line-title">
+        <div class="common-line">
             <img src="assets/img/hear.png" alt="hear">
         </div>
         <p>
@@ -331,7 +331,7 @@
             and it has a lot
         </p>
     </div>
-    <div class="teams__content owl-carousel owl-caro-team">
+    <div class="teams__content common-container owl-carousel owl-caro-team">
         <div class="content item">
             <div class="item-content">
                 <img src="assets/img/team1.png" alt="item1.png"/>
@@ -441,19 +441,19 @@
                 <img src="assets/img/team1.png" alt="team1"/>
                 <div class="item-content__detail">
                     <div class="detail">
-                    <h2>
-                        Nemo enim ipsam
-                        voluptatem quia
-                    </h2>
-                    <p>
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        ratione voluptatem.voluptatem.
-                    </p>
-                    <div class="detail__social">
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
+                        <h2>
+                            Nemo enim ipsam
+                            voluptatem quia
+                        </h2>
+                        <p>
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            ratione voluptatem.voluptatem.
+                        </p>
+                        <div class="detail__social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -574,11 +574,11 @@
 <section class="some-fun common-section">
     <div class="some-fun__title common-title">
         <h2>SOME FUN FACTS</h2>
-        <div class="line-title">
+        <div class="common-line">
             <img src="assets/img/hear1.png" alt="hear.png">
         </div>
     </div>
-    <div class="some-fun__content">
+    <div class="some-fun__content common-container">
         <div class="content-item">
             <i class="fas fa-clock"></i>
             <h2 class="counter">3200</h2>
@@ -608,14 +608,14 @@
 <section class="let-discuss common-section">
     <div class="let-discuss__title common-title">
         <h2>LET'S DISCUSS</h2>
-        <div class="line-title">
+        <div class="common-line">
             <img src="assets/img/hear.png" alt="hear.png">
         </div>
         <p>
             Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
         </p>
     </div>
-    <div class="let-discuss__content">
+    <div class="let-discuss__content common-container">
         <div class="content-title">
             <h2>Cras at ultrices erat, sed vulputate! </h2>
             <p>2345 Setwant natrer, 1234,
@@ -654,7 +654,7 @@
 
 <!--FOOTER-->
 <footer class="common-section" id="contact">
-    <div class="footer__content">
+    <div class="footer__content common-container">
         <div class="footer__brandi">
             <h2>Brandi</h2>
             <p>
@@ -664,7 +664,7 @@
         </div>
         <div class="footer__subscribe">
             <h2>Subscribe</h2>
-            <div class="subscribe-form">
+            <div class="subscribe__form">
                 <input>
                 <i class="fas fa-arrow-right"></i>
             </div>
@@ -694,7 +694,7 @@
             </table>
         </div>
         <div class="footer__info">
-            <p class="footer__info-top">
+            <p class="info__top">
                 Create with
                 <span>
                 <i class="fas fa-heart"></i>
@@ -705,7 +705,7 @@
         </span>
                 exclusive for kreativeshowcase
             </p>
-            <p class="footer__info-bottom">
+            <p class="info__bottom">
                 © 2014 Brandi. All Rights Reserved.
             </p>
         </div>
