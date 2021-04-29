@@ -35,34 +35,29 @@
 <!--HEADER-->
 <header>
     <div class="navbar common-container">
-        <div class="navbar__left">
-            <h1 class="navbar-brandi"><a href="">Brandi</a></h1>
-            <div class="navbar-text">
+        <div class="navbar__brandi">
+            <h1><a href="">Brandi</a></h1>
+            <div class="navbar__brandi__text">
                 I'am your tag line
             </div>
         </div>
-        <ul class="nav__right nav-menu">
-            <li class="nav-item">
-
-                <a class="nav-links" href="#home"> Home</a>
+        <ul class="nav-menu">
+            <li>
+                <a href="#home"> Home</a>
             </li>
-            <li class="nav-item">
-
-                <a class="nav-links" href="#feature"> Features</a>
+            <li>
+                <a href="#feature"> Features</a>
             </li>
-            <li class="nav-item">
-
-                <a class="nav-links" href="#work"> Works</a>
+            <li>
+                <a href="#work"> Works</a>
             </li>
-            <li class="nav-item">
-
-                <a class="nav-links" href="#team">Team</a>
+            <li>
+                <a href="#team">Team</a>
             </li>
-            <li class="nav-item">
-
-                <a class="nav-links" href="#contact">Contact</a>
+            <li>
+                <a href="#contact">Contact</a>
             </li>
-            <li class="nav-item"><i class="fas fa-times" onclick="handleClickCloseSidebar()"></i></li>
+            <li><i class="fas fa-times" onclick="handleClickCloseSidebar()"></i></li>
         </ul>
         <div class="navbar__hamburger" onclick="handleClickOpenSidebar()">
             <i class="fas fa-bars"></i>
@@ -89,9 +84,8 @@
         <p>
             <span>We are team of professionals</span>
         </p>
-
-
     </div>
+
     <div class="slider__icon">
         <i class="fab fa-twitter"></i>
         <i class="fab fa-facebook-f"></i>
@@ -106,17 +100,16 @@
     <div class="features__title common-title">
         <h2>FEATURES</h2>
         <div class="common-line">
-
-            <img src="assets/img/hear.png">
-
+            <img src="assets/img/hear.png" alt="hear">
         </div>
     </div>
+
     <div class="features__content common-container owl-carousel owl-caro-feature">
-        <div class="item-content item">
-            <div class="item-content__list">
+        <div class="item">
+            <div class="item__list">
                 <i class="fas fa-feather"></i>
             </div>
-            <div class="item-content__header">
+            <div class="item__header">
                 <h2>Branding</h2>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -124,11 +117,11 @@
                 </p>
             </div>
         </div>
-        <div class="item-content item">
-            <div class="item-content__list">
+        <div class="item">
+            <div class="item__list">
                 <i class="fas fa-pencil-alt"></i>
             </div>
-            <div class="item-content__header">
+            <div class="item__header">
                 <h2>Development</h2>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -136,11 +129,11 @@
                 </p>
             </div>
         </div>
-        <div class="item-content item">
-            <div class="item-content__list">
+        <div class="item">
+            <div class="item__list">
                 <i class="fas fa-bullhorn"></i>
             </div>
-            <div class="item-content__header">
+            <div class="item__header">
                 <h2>Consulring</h2>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -148,11 +141,11 @@
                 </p>
             </div>
         </div>
-        <div class="item-content item">
-            <div class="item-content__list">
+        <div class="item">
+            <div class="item__list">
                 <i class="fas fa-feather"></i>
             </div>
-            <div class="item-content__header">
+            <div class="item__header">
                 <h2>Branding</h2>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -160,11 +153,11 @@
                 </p>
             </div>
         </div>
-        <div class="item-content item">
-            <div class="item-content__list">
+        <div class="item">
+            <div class="item__list">
                 <i class="fas fa-pencil-alt"></i>
             </div>
-            <div class="item-content__header">
+            <div class="item__header">
                 <h2>Development</h2>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -172,25 +165,25 @@
                 </p>
             </div>
         </div>
-        <div class="item-content item">
-            <div class="item-content__list">
+        <div class="item">
+            <div class="item__list">
                 <i class="fas fa-bullhorn"></i>
             </div>
-            <div class="item-content__header">
+            <div class="item__header">
                 <h2>Consulring</h2>
-                <p class="header-title">
+                <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 </p>
             </div>
         </div>
-        <div class="item-content item">
-            <div class="item-content__list">
+        <div class="item">
+            <div class="item__list">
                 <i class="fas fa-bullhorn"></i>
             </div>
-            <div class="item-content__header">
+            <div class="item__header">
                 <h2>Consulring</h2>
-                <p class="header-title">
+                <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 </p>
@@ -213,28 +206,28 @@
         </p>
     </div>
     <div class="works__tab">
-        <ul class="navtab">
-            <li class="navtab-item">
-                <a class="navtab-links active" onclick="filterSelection('all')">All</a>
+        <ul>
+            <li>
+                <a class="active" onclick="filterSelection('all')">All</a>
             </li>
-            <li class="navtab-item">
-                <a class="navtab-links" onclick="filterSelection('branding')">Branding</a>
+            <li>
+                <a class="" onclick="filterSelection('branding')">Branding</a>
             </li>
-            <li class="navtab-item">
-                <a class="navtab-links" onclick="filterSelection('web')">Web</a>
+            <li>
+                <a class="" onclick="filterSelection('web')">Web</a>
             </li>
-            <li class="navtab-item">
-                <a class="navtab-links" onclick="filterSelection('logodesign')">Logo Design</a>
+            <li>
+                <a class="" onclick="filterSelection('logodesign')">Logo Design</a>
             </li>
-            <li class="navtab-item">
-                <a class="navtab-links" onclick="filterSelection('photography')">Photography</a>
+            <li>
+                <a class="" onclick="filterSelection('photography')">Photography</a>
             </li>
         </ul>
         <div class="tab-content">
             <div class="tab-content__item branding">
                 <img src="./assets/img/item1.png" alt="item1.png">
                 <div class="item__detail">
-                    <div class="item__detail-content">
+                    <div class="item__detail__content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
                         <p>Photography</p>
@@ -244,7 +237,7 @@
             <div class="tab-content__item web">
                 <img src="./assets/img/item2.png" alt="item2.png">
                 <div class="item__detail">
-                    <div class="item__detail-content">
+                    <div class="item__detail__content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
                         <p>Photography</p>
@@ -255,7 +248,7 @@
                 <img src="./assets/img/item3.png" alt="item3.png">
                 <div class="item__detail">
 
-                    <div class="item__detail-content">
+                    <div class="item__detail__content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
                         <p>Photography</p>
@@ -266,7 +259,7 @@
                 <img src="./assets/img/item4.png" alt="item4.png">
                 <div class="item__detail">
 
-                    <div class="item__detail-content">
+                    <div class="item__detail__content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
                         <p>Photography</p>
@@ -276,7 +269,7 @@
             <div class="tab-content__item photography">
                 <img src="./assets/img/item5.png" alt="item5.png">
                 <div class="item__detail">
-                    <div class="item__detail-content">
+                    <div class="item__detail__content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
                         <p>Photography</p>
@@ -286,7 +279,7 @@
             <div class="tab-content__item web">
                 <img src="./assets/img/item6.png" alt="item6.png">
                 <div class="item__detail">
-                    <div class="item__detail-content">
+                    <div class="item__detail__content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
                         <p>Photography</p>
@@ -296,7 +289,7 @@
             <div class="tab-content__item branding">
                 <img src="./assets/img/item7.png" alt="item7.png">
                 <div class="item__detail">
-                    <div class="item__detail-content">
+                    <div class="item__detail__content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
                         <p>Photography</p>
@@ -306,7 +299,7 @@
             <div class="tab-content__item logodesign">
                 <img src="./assets/img/item8.png" alt="item8.png">
                 <div class="item__detail">
-                    <div class="item__detail-content">
+                    <div class="item__detail__content">
                         <i class="fas fa-eye" onclick="clickToShowModal(this)"></i>
                         <h2>Labore et dolore magnam </h2>
                         <p>Photography</p>
@@ -331,12 +324,13 @@
             and it has a lot
         </p>
     </div>
+
     <div class="teams__content common-container owl-carousel owl-caro-team">
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team1.png" alt="item1.png"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -345,11 +339,11 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
+                    </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
                     </div>
                 </div>
             </div>
@@ -358,11 +352,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team2.png" alt="item2.png"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -371,12 +365,13 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
                     </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+
                 </div>
             </div>
             <div class="item__title">
@@ -384,11 +379,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team3.png" alt="item3.png"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -397,12 +392,13 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
                     </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+
                 </div>
             </div>
             <div class="item__title">
@@ -410,11 +406,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team4.png" alt="item4.png"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -423,12 +419,13 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
                     </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+
                 </div>
             </div>
             <div class="item__title">
@@ -436,11 +433,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team1.png" alt="team1"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -449,12 +446,13 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
                     </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+
                 </div>
             </div>
             <div class="item__title">
@@ -462,11 +460,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team2.png" alt=" team 2"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -475,12 +473,13 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
                     </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+
                 </div>
             </div>
             <div class="item__title">
@@ -488,11 +487,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team3.png" alt="team-3"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -501,12 +500,13 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
                     </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+
                 </div>
             </div>
             <div class="item__title">
@@ -514,11 +514,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team4.png" alt="team4"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -527,12 +527,13 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
                     </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+
                 </div>
             </div>
             <div class="item__title">
@@ -540,11 +541,11 @@
                 <p>Lead Develop</p>
             </div>
         </div>
-        <div class="content item">
-            <div class="item-content">
+        <div class="item">
+            <div class="item__content">
                 <img src="assets/img/team1.png" alt="team1"/>
-                <div class="item-content__detail">
-                    <div class="detail">
+                <div class="item__content__thumbnail">
+                    <div class="thumbnail__content">
                         <h2>
                             Nemo enim ipsam
                             voluptatem quia
@@ -553,12 +554,13 @@
                             sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             ratione voluptatem.voluptatem.
                         </p>
-                        <div class="detail__social">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
                     </div>
+                    <div class="thumbnail__social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+
                 </div>
             </div>
             <div class="item__title">
@@ -578,6 +580,7 @@
             <img src="assets/img/hear1.png" alt="hear.png">
         </div>
     </div>
+
     <div class="some-fun__content common-container">
         <div class="content-item">
             <i class="fas fa-clock"></i>
@@ -615,6 +618,7 @@
             Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
         </p>
     </div>
+
     <div class="let-discuss__content common-container">
         <div class="content-title">
             <h2>Cras at ultrices erat, sed vulputate! </h2>

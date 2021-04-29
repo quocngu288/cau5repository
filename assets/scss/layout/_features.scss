@@ -9,10 +9,10 @@
   .features__content {
 
 
-    .item-content {
+    .item {
       display: flex;
 
-      .item-content__list{
+      .item__list{
         margin: 0 15px;
 
         i {
@@ -27,7 +27,7 @@
         }
       }
 
-      .item-content__header {
+      .item__header {
         h2 {
           font-size: 20px;
           font-weight: bolder;

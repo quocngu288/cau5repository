@@ -6,19 +6,19 @@
   }
 
   .works__tab {
-    .navtab {
+    ul {
       display: flex;
       justify-content: center;
       list-style: none;
       margin: 0 auto 46px auto;
-      .navtab-item {
+      li {
 
         border: inherit;
         border-radius: 10px;
         cursor: pointer;
         text-align: center;
         margin-right: 10px;
-        .navtab-links {
+        a {
           color: #0b0b0b;
           font-weight: 700;
           font-size: 14px;
@@ -54,7 +54,7 @@
         }
 
       }
-      .navtab-item:nth-child(5){
+      li:nth-child(5){
         margin-right: 0;
       }
 
@@ -92,7 +92,7 @@
           opacity: 0;
           transition: all 0.5s;
 
-          .item__detail-content {
+          .item__detail__content {
             .fas {
               padding: 10px;
               text-align: center;

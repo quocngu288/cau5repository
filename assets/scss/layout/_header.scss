@@ -23,22 +23,22 @@ header {
       display: none;
     }
 
-    .navbar__left {
+    .navbar__brandi {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
 
-
-      .navbar-brandi {
+      h1 {
         font-family: 'Pacifico', cursive;
         font-size: 28px;
         line-height: 1;
-        a{
+
+        a {
           color: #fff;
         }
       }
 
-      .navbar-text {
+      .navbar__brandi__text {
         margin: 0 0 0 20px;
         padding-left: 15px;
         width: 130px;
@@ -54,7 +54,7 @@ header {
       }
     }
 
-    .nav-menu {
+    ul {
       display: grid;
       grid-template-columns: repeat(5, auto);
       grid-gap: 6px;
@@ -62,19 +62,21 @@ header {
       text-align: center;
       height: 70px;
 
-      .nav-item {
-        .nav-links {
-          position: relative;
+      li {
+        position: relative;
+        margin: 0 13px 0 13px;
+
+        a {
           color: #fff;
           font-size: 13px;
           line-height: 70px;
           text-decoration: none;
-          padding: 0 13px 0 13px;
           cursor: pointer;
 
           &:before {
             position: absolute;
-            top: -10;
+            top: 0;
+            left: 0;
             content: "";
             height: 2px;
             background-color: #32b0ee;
@@ -83,7 +85,7 @@ header {
           }
 
           &:hover:before {
-            width: 40px;
+            width: 100%;
           }
 
           @media #{$info-tablet-vertical}  {
@@ -95,7 +97,7 @@ header {
             &:hover:before {
               width: 48px;
             }
-            .nav-links:nth-child(5) {
+            a:nth-child(5) {
               padding: 0 13px 0 13px;
             }
           }
@@ -104,15 +106,16 @@ header {
 
       }
 
-      .nav-item:nth-child(5) {
-        .nav-links {
+      li:nth-child(5) {
+        a {
           padding-right: 0;
         }
       }
 
-      .nav-item:nth-child(6) {
+      li:nth-child(6) {
         visibility: hidden;
-        .fa-times{
+
+        .fa-times {
           color: #fff;
           font-size: 25px;
           cursor: pointer;
@@ -133,7 +136,7 @@ header {
         transform: translateX(-300px);
         transition: 0.5s all;
 
-        .nav-item:nth-child(6){
+        li:nth-child(6) {
           position: absolute;
           right: 5%;
           top: 2%;
