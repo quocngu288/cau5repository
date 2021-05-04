@@ -8,7 +8,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 420px;
     @media #{$info-phone}{
       padding-top: 380px;
     }
@@ -59,18 +58,18 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    @include transform(translate(-50%));
     z-index: 1;
     color: #FFFFFF;
 
     p:nth-child(1) {
-      font-size: 62px;
+      @include font-size(62px);
       font-weight: 100;
       white-space: nowrap;
       margin-bottom: 5px;
-      @media #{$info-phone-2} {
-        font-size: 52px;
-      }
+      //@media #{$info-phone-2} {
+      //  @include font-size(52px);
+      //}
 
       span {
         font-weight: 500;
@@ -79,12 +78,13 @@
 
     p:nth-child(2) {
       color: #0eb493;
-      font-size: 48px;
+      @include font-size(48px);
       font-weight: 100;
       line-height: 45px;
-      @media #{$info-phone-2} {
-        font-size: 38px;
-      }
+      white-space: nowrap;
+      //@media #{$info-phone-2} {
+      //  @include font-size(38px);
+      //}
 
       span {
         color: #FFFFFF;
@@ -95,13 +95,14 @@
       margin-top: 25px;
       position: relative;
       overflow: hidden;
+
       span {
         display: inline-block;
         position: relative;
         padding: 0 30px;
         color: #FFFFFF;
         opacity: 0.8;
-        font-size: 18px;
+        @include font-size(18px);
         &:before, &:after {
           content: '';
           display: block;
@@ -111,8 +112,17 @@
           border-top: 2px solid #0eb493;
         }
 
-        &:before { right: 100%; }
-        &:after { left: 100%; }
+        &:before {
+          right: 100%;
+        }
+        &:after {
+          left: 100%;
+        }
+        @media #{$info-tablet-vertical}{
+            &:before, &:after {
+              top: 10px;
+            }
+        }
       }
 
     }
@@ -123,14 +133,12 @@
     position: absolute;
     bottom: 50px;
     left: 50%;
-    transform: translate(-50%);
+    @include transform(translate(-50%));
     z-index: 1;
-
     i {
       margin: 0 5px;
       color: rgba(255, 255, 255, 0.5);
       cursor: pointer;
-
       &:hover {
         color: rgba(255, 255, 255, 1);
       }

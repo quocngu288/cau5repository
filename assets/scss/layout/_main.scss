@@ -1,8 +1,7 @@
 .common-line {
   width: 100%;
   position: relative;
-  z-index: 1;
-  margin-bottom: 30px;
+
 
   img {
     margin: 20px auto;
@@ -15,7 +14,7 @@
     width: 90px;
     height: 1px;
     background: #dce1e5;
-    transform: translate(-15%,-50%);
+    @include transform(translate(-15%,-50%));
     top: 50%;
     right: 52%;
   }
@@ -26,7 +25,7 @@
     width: 90px;
     height: 1px;
     background: #dce1e5;
-    transform: translate(50%,-50%);
+    @include transform(translate(50%,-50%));
     top: 50%;
     left: 50%;
   }
@@ -36,13 +35,13 @@
   margin: 0 0 60px 0;
   h2 {
     text-align: center;
-    font-size: 28px;
+    @include font-size(28px);
     font-weight: 800;
     color: #0eb493;
   }
 
   p {
-    font-size: 18px;
+    @include font-size(18px);
     font-weight: 600;
     text-align: center;
     margin: 0 20%;
@@ -66,7 +65,7 @@
 
   .fas {
     color: #000;
-    font-size: 22px;
+    @include font-size(22px);
     font-weight: bold;
   }
 }
@@ -92,7 +91,7 @@
     top: 15px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;
+    @include font-size(40px);
     font-weight: bold;
     transition: 0.3s;
   }
@@ -102,14 +101,14 @@
     display: block;
     width: 80%;
     max-width: 700px;
-    transform: translateY(25%);
+    @include transform(translateY(25%));
   }
 }
 
 @keyframes play {
 
   0% {
-    transform: scale(1);
+    @include transform(scale(1));
   }
   15% {
     box-shadow: 0 0 0 5px rgba(14, 180, 147, 0.4);

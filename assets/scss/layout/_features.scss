@@ -11,7 +11,6 @@
 
     .item {
       display: flex;
-
       .item__list{
         margin: 0 15px;
 
@@ -29,13 +28,13 @@
 
       .item__header {
         h2 {
-          font-size: 20px;
+          @include font-size(20px);
           font-weight: bolder;
         }
 
         p {
           margin: 20px 0;
-          font-size: 13px;
+          @include font-size(13px);
           color: #062033;
         }
       }
@@ -48,12 +47,10 @@
     .owl-dots {
       margin-top: 50px;
       text-align: center;
-
       .owl-dot {
         height: 8px;
         width: 8px;
         display: inline-block;
-
         border-radius: 50%;
         border: 1px solid #c3c6c7;
         margin-right: 15px;

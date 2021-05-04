@@ -8,7 +8,7 @@
 
   .teams__content {
     text-align: center;
-
+    margin-top: 110px;
     .item {
       .item__content {
         position: relative;
@@ -27,13 +27,13 @@
 
             h2 {
               font-weight: bolder;
-              font-size: 16px;
+              @include font-size(16px);
               color: #FFFFFF;
             }
 
             p {
               margin: 20px 0 0 0;
-              font-size: 16px;
+              @include font-size(16px);
               color: #FFFFFF;
               @media #{$info-phone-3}{
                 margin-top: 40px;
@@ -78,14 +78,14 @@
       .item__title {
         h2 {
           margin-top: 20px;
-          font-size: 18px;
+          @include font-size(18px);
           font-weight: bolder;
           color: #062033;
         }
 
         p {
-          padding-top: 5px;
-          font-size: 13px;
+          margin-top: 5px;
+          @include font-size(13px);
           color: #062033;
         }
       }

@@ -11,7 +11,7 @@
     .content-title {
       grid-column: 1/span 3;
       h2 {
-        font-size: 22px;
+        @include font-size(22px);
         font-weight: 500;
         color: #062033;
         margin-bottom: 30px;
@@ -20,7 +20,7 @@
 
       p {
         grid-column: 1/span 2;
-        font-size: 13px;
+        @include font-size(13px);
         width: 70%;
         color: #6a737b;
         font-weight: 600;
@@ -41,7 +41,7 @@
     .content-form {
       grid-column: 4/span 8;
       h2 {
-        font-size: 24px;
+        @include font-size(24px);
         font-weight: 600;
         color: #062033;
         margin-bottom: 45px;
@@ -59,7 +59,7 @@
           border-right: none;
           padding: 0 0 20px 0;
           max-width: 100%;
-          font-size: 13px;
+          @include font-size(13px);
           color: #6a737b;
           font-weight: 600;
 
@@ -95,9 +95,8 @@
         cursor: pointer;
 
         h2 {
-          font-size: 16px;
+          @include font-size(16px);
           font-weight: 600;
-          display: inline-block;
 
           &:hover {
             color: #0eb493;
@@ -124,7 +123,7 @@
       align-items: center;
       justify-content: center;
       color: #cdd2d6;
-      font-size: 20px;
+      @include font-size(20px);
       font-weight: 600;
 
       .fab {
