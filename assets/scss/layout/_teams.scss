@@ -1,0 +1,131 @@
+.teams {
+
+  width: 100%;
+
+  .teams__title {
+
+  }
+
+  .teams__content {
+    text-align: center;
+    margin-top: 110px;
+    .item {
+      .item__content {
+        position: relative;
+
+        .item__content__thumbnail {
+          position: absolute;
+          top: 0;
+          height: 100%;
+          background: rgba(29, 177, 147, 0.9);
+          transition: all 0.5s;
+          opacity: 0;
+          text-align: center;
+
+          .thumbnail__content {
+            padding: 20px 20px;
+
+            h2 {
+              font-weight: bolder;
+              @include font-size(16px);
+              color: #FFFFFF;
+            }
+
+            p {
+              margin: 20px 0 0 0;
+              @include font-size(16px);
+              color: #FFFFFF;
+              @media #{$info-phone-3}{
+                margin-top: 40px;
+              }
+            }
+
+
+            @media screen and (max-width: 738px) {
+              padding: 40px 20px 20px 20px;
+            }
+            @media #{$info-phone-2} {
+              padding: 20px 30px;
+            }
+            @media #{$info-phone-3}{
+              padding: 80px 40px 20px 40px;
+            }
+          }
+
+          .thumbnail__social {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .fab {
+              background: rgba(18, 128, 106, 0.9);
+              color: #FFFFFF;
+              line-height: 40px;
+              margin: 0 2px;
+              width: 40px;
+            }
+
+            @media #{$info-phone-3} {
+              bottom: 30%;
+            }
+          }
+        }
+      }
+
+      .item__title {
+        h2 {
+          margin-top: 20px;
+          @include font-size(18px);
+          font-weight: bolder;
+          color: #062033;
+        }
+
+        p {
+          margin-top: 5px;
+          @include font-size(13px);
+          color: #062033;
+        }
+      }
+
+      &:hover .item__content .item__content__thumbnail {
+        opacity: 1;
+      }
+
+      &:hover h2 {
+        color: #0eb493;
+      }
+    }
+
+    .owl-nav {
+      display: none;
+    }
+
+    .owl-dots {
+      margin-top: 50px;
+      text-align: center;
+
+      .owl-dot {
+        height: 8px;
+        width: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #c3c6c7;
+        margin-right: 15px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .owl-dot.active {
+        background: #000000;
+        border: 1px solid #000;
+      }
+    }
+  }
+
+
+}

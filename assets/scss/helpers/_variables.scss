@@ -49,6 +49,13 @@ $hsize: $size/2;
 $info-tablet-horizontal: "only screen and (max-width : 1160px)";
 $info-tablet-vertical: "only screen and (max-width : 900px)";
 $info-phone: "only screen and (max-width : 767px)";
-$info-phone-4: "only screen and (max-width : 320px)";
-
+$info-phone-1: "only screen and (max-width : 690px)";
+$info-phone-2: "only screen and (max-width : 560px)";
+$info-phone-3: "only screen and (max-width : 499px)";
+$info-phone-4: "only screen and (max-width : 460px)";
+$info-phone-5: "only screen and (max-width : 320px)";
 $primary-green: #0eb493;
+
+//@media #{$info-phone} {
+//
+//}
